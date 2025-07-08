@@ -1,0 +1,53 @@
+#smartbanner{position:absolute;left:0;top:-82px;border-bottom:1px solid #e8e8e8;width:100%;height:78px;font-family:'Helvetica Neue',sans-serif;background:-webkit-linear-gradient(top,#f4f4f4 0,#cdcdcd 100%);background-image:-ms-linear-gradient(top,#f4f4f4 0,#cdcdcd 100%);background-image:-moz-linear-gradient(top,#f4f4f4 0,#cdcdcd 100%);box-shadow:0 1px 2px rgba(0,0,0,0.5);z-index:9998;-webkit-font-smoothing:antialiased;overflow:hidden;-webkit-text-size-adjust:none}
+#smartbanner,html.sb-animation{-webkit-transition:all .3s ease}
+#smartbanner .sb-container{margin:0 auto}
+#smartbanner .sb-close{position:absolute;left:5px;top:5px;display:block;border:2px solid #fff;width:14px;height:14px;font-family:'ArialRoundedMTBold',Arial;font-size:15px;line-height:15px;text-align:center;color:#fff;background:#070707;text-decoration:none;text-shadow:none;border-radius:14px;box-shadow:0 2px 3px rgba(0,0,0,0.4);-webkit-font-smoothing:subpixel-antialiased}
+#smartbanner .sb-close:active{font-size:13px;color:#aaa}
+#smartbanner .sb-icon{position:absolute;left:35px;top:15px;display:block;width:40px;height:40px;box-shadow:0 1px 3px rgba(0,0,0,0.3);background:rgba(0,0,0,0);background-size:auto;background-repeat:no-repeat;background-position:center center}
+#smartbanner.no-icon .sb-icon{display:none}
+#smartbanner .sb-info{position:absolute;left:98px;top:18px;width:44%;font-size:11px;line-height:1.2em;font-weight:bold;color:#6a6a6a;text-shadow:0 1px 0 rgba(255,255,255,0.8)}
+#smartbanner #smartbanner.no-icon .sb-info{left:34px}
+#smartbanner .sb-info strong{display:block;font-size:13px;color:#4d4d4d;line-height:18px}
+#smartbanner .sb-info>span{display:block}
+#smartbanner .sb-info em{font-style:normal;text-transform:uppercase}
+#smartbanner .sb-button{position:absolute;right:15px}
+#smartbanner .sb-button:active,#smartbanner .sb-button:hover{background:-webkit-linear-gradient(top,#dcdcdc 0,#efefef 100%)}
+#smartbanner .sb-icon.gloss:after{content:'';position:absolute;left:0;top:-1px;border-top:1px solid rgba(255,255,255,0.8);width:100%;height:50%;background:-webkit-linear-gradient(top,rgba(255,255,255,0.7) 0,rgba(255,255,255,0.2) 100%);border-radius:10px 10px 12px 12px}
+#smartbanner.android{background:0;background-color:white;box-shadow:none;height:65px}
+#smartbanner.android .sb-close{width:22px;height:22px;color:#999;background:transparent;text-shadow:none;box-shadow:none;font-size:35px;font-family:Arial,sans-serif;box-sizing:border-box;margin-top:15px;margin-left:8px}
+#smartbanner.android .sb-info{color:#999;font-size:10px;top:10px;left:100px}
+#smartbanner.android .sb-info strong{color:black;font-family:Arial,sans-serif;font-weight:bold;font-size:12px;text-shadow:none}
+#smartbanner .sb-button,#smartbanner .sb-button:active{min-width:12%;padding-left:5px;padding-right:5px}
+#smartbanner.android .sb-icon{position:absolute;left:45px;top:10px;display:block;width:40px;height:40px;box-shadow:none;background:rgba(0,0,0,0);background-size:auto;background-repeat:no-repeat;background-position:center center}
+#smartbanner.windows .sb-icon{border-radius:0}
+div.mobile div.mobile_info p br{display:none}
+#ib_mobile_page{text-align:center}
+#ib_mobile_page .mobile_imgs img{max-height:160px}
+#ib_mobile_page .mobile_info p{font-size:11px}
+#ib_mobile_page .mobile_info{padding-left:20px;padding-right:20px}
+#ib_mobile_page .mobile_app_button{display:none}
+section{margin-bottom:0}
+div.mobile div.mobile_imgs{padding:10px 0}
+div.mobile div.mobile_info{margin-left:13px;padding-bottom:20px;max-width:600px}
+div.mobile div.mobile_info div.app_stores{height:50px;display:block;margin:23px 0 0 0}
+@media only screen and (max-width:959px){.unicredit_on_mobile div.mobile div.mobile_info div.app_stores{text-align:center;padding-left:0}
+}
+@media only screen and (min-width:960px) and (max-height:570px){div.mobile div.mobile_info{position:static}
+}
+@media only screen and (min-width:600px) and (max-width:959px){div.mobile div.mobile_info{position:relative;margin:0 auto;text-align:center;float:none;display:block;padding-right:0}
+div.mobile div.mobile_info div.app_stores{position:relative;display:table;margin:25px auto 0}
+}
+@media only screen and (min-width:480px) and (max-width:599px){.unicredit_on_mobile div.mobile div.mobile_info div.app_stores{text-align:center;padding-left:0;margin-bottom:20px}
+section .unicredit_on_mobile div.mobile div.mobile_info div.app_stores{margin-bottom:0}
+div.mobile div.mobile_info div.app_stores{left:0;padding-left:0}
+div.mobile div.mobile_info div.app_stores a,div.mobile div.mobile_info div.app_stores span{clear:both;float:none}
+}
+@media only screen and (max-width:599px){div.mobile div.mobile_info{position:static;text-align:center;width:100%;margin:0 auto}
+.unicredit_on_mobile div.mobile div.mobile_info div.app_stores{text-align:center}
+div.mobile div.mobile_info div.app_stores{text-align:center;padding-left:48px;height:auto;margin-bottom:10px}
+div.mobile div.mobile_info div.app_stores span,div.mobile div.mobile_info div.app_stores a{float:none;clear:both;display:block;position:relative}
+div.mobile div.mobile_info div.app_stores span{height:15px;line-height:15px;left:50%}
+div.mobile div.mobile_info div.app_stores a{margin:0 auto;width:150px}
+div.mobile div.mobile_info div.app_stores span{left:auto;margin-top:4px;margin-bottom:4px}
+div.mobile div.mobile_info div.app_stores span:empty{margin:0}
+}

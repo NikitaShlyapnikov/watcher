@@ -1,0 +1,9 @@
+.cookie-bar{position:fixed;display:none;width:100%;background-color:#333;text-align:center;padding:20px 0;z-index:1000;transition:top .3s ease}
+.cookie-bar.visible{top:0;display:table}
+.cookie-bar.transition{top:-1000px;display:table}
+.cookie-bar .cookie-cell{display:table-cell;vertical-align:middle}
+.cookie-bar p{display:inline-block;font-size:18px;line-height:20px;color:#fff;vertical-align:middle;margin:0;font-family:'Unicredit'}
+.cookie-bar button{margin-left:30px}
+.cookie-bar button:hover{color:#dedede;border-color:#999;background-color:#999}
+.cookie-bar a{color:#00bcd4}
+.cookie-bar a:hover,.cookie-bar a:focus{color:#00bcd4;text-decoration:underline}

@@ -1,0 +1,34 @@
+.text-columns>.product-sub-heading{text-align:center;padding:0 88px;margin-top:64px;margin-bottom:48px}
+.text-columns>.product-sub-heading h3{margin:0;font-size:15px;font-weight:500;line-height:20px;color:#666;text-transform:uppercase;letter-spacing:.5px}
+.text-columns>.product-sub-heading h2{font-size:36px;font-weight:400;line-height:40px;margin-bottom:8px;color:#333}
+.text-columns .container{position:relative;width:auto}
+.text-columns .steps{padding:0 88px;margin-top:60px;margin-bottom:60px}
+.text-columns .steps .step h3{text-align:center}
+.text-columns .steps .row .step h4{text-align:center}
+.text-columns .step .icon{display:block;font-size:64px;margin-bottom:16px}
+.text-columns .step h3{font-size:20px;font-weight:500;margin-bottom:16px;color:inherit;text-transform:initial;line-height:1.1;letter-spacing:inherit}
+.text-columns .steps .row .step h4{font-size:20px;font-weight:500;margin-bottom:16px;color:inherit;text-transform:initial;line-height:1.1;letter-spacing:inherit}
+.text-columns .step p{font-family:Unicredit,Arial;font-size:15px;font-weight:400;line-height:19px;color:#333}
+.text-columns .step div.column-description p a:focus-visible,.text-columns .step div.column-description p strong a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+.text-columns .step div.column-description{margin-bottom:16px}
+.text-columns .step p.icon-container{text-align:center;min-height:auto}
+.text-columns .step p.icon-container img{width:auto;max-width:200px}
+.text-columns .step p.link-container{min-height:auto;text-align:center}
+.text-columns .step p.link-container a{font-size:15px;line-height:19px;font-weight:500;text-transform:uppercase;text-decoration:none;color:#007a91}
+.text-columns .step p.link-container a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+.text-columns .container ul.crc-ul{padding-left:22px;margin:0}
+.text-columns .container ul.crc-ul li{font-family:Arial;font-size:15px;line-height:24px;color:#999;margin:4px 0;padding-bottom:0}
+.text-columns .container ul.crc-ul li span{color:#333}
+.text-columns span[class^="ico-iw2duo-"],.text-columns span[class*=" ico-iw2duo-"]{font-family:'IconWerk2-duo-v06' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}
+.text-columns .icon.uc-icon.ico-iw2duo-Account .path2:before,.text-columns .icon.uc-icon.ico-iw2duo-prestiti .path1:before,.text-columns .icon.uc-icon.ico-iw2duo-bancadigitale .path2:before,.text-columns .icon.uc-icon.ico-iw2duo-bancadigitale .path3:before,.text-columns .icon.uc-icon.ico-iw2duo-bancadigitale .path4:before,.text-columns .icon.uc-icon.ico-iw2duo-finanziamenti .path2:before,.text-columns .icon.uc-icon.ico-iw2duo-smartphone .path2:before,.text-columns .icon.uc-icon.ico-iw2duo-smartphone .path3:before,.text-columns .icon.uc-icon.ico-iw2duo-smartphone .path4:before,.text-columns .icon.uc-icon.ico-iw2duo-internetbanking .path2:before,.text-columns .icon.uc-icon.ico-iw2duo-area-protetta .path3:before,.text-columns .icon.uc-icon.ico-iw2duo-area-protetta .path3:before,.text-columns .icon.uc-icon.ico-iw2duo-ricevutepagamenti .path2:before,.text-columns .icon.uc-icon.icomoon-Card-to-Card .path2:before,.text-columns .icon.uc-icon.icomoon-Card-to-Card .path3:before,.text-columns .icon.uc-icon.icomoon-Loan-Repayment .path2:before,.text-columns .icon.uc-icon.ico-iw2duo-catologo .path1:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path2:before{color:#333}
+.text-columns .icon.uc-icon.ico-iw2duo-imprese .path3:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path4:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path5:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path6:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path7:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path8:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path9:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path10:before,.text-columns .icon.uc-icon.ico-iw2duo-imprese .path11:before{color:#fff}
+@media(max-width:959px){.text-columns{padding-top:50px}
+.text-columns>.product-sub-heading{margin-top:16px}
+.text-columns .steps .row .container{padding-left:24px;padding-right:24px}
+.text-columns .step p{min-height:auto}
+.text-columns .step{margin-bottom:72px}
+}
+@media(max-width:599px){.text-columns>.container.product-sub-heading,.text-columns .steps .row .container{padding:0 16px}
+.text-columns .container.steps{padding:16px}
+.text-columns>.product-sub-heading h2{padding:0}
+}

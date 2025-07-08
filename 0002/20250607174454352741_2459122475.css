@@ -1,0 +1,30 @@
+#sub_header.search,#sub_header.faq{background:#f2f2f2}
+.sm_searchform #sub_header{position:inherit;height:auto}
+.search_form .page-title{margin:15px auto -15px}
+.sm_search_process_traking_form .search_form .page-title{margin-bottom:8px}
+#sub_header.search .sub_header_content{position:inherit;padding-top:10px}
+#sub_header.faq .sub_header_content{position:relative !important;top:150px}
+input.textfield.search{width:100%;height:36px;box-sizing:border-box;border:solid 1px silver;border-radius:3px;display:inline-block;float:left;text-indent:45px;color:#4f575e;font-size:14px;font-style:italic;background:#fff url('img2.gif') 12px -78px no-repeat;padding:0;position:relative;left:0;top:0}
+input.search_btn,button.search_btn{position:relative;float:right;top:-33px;width:100px;height:30px;background:#004974;color:#fff;border:0;border-radius:3px;font-family:Arial,sans-serif;font-size:14px;text-transform:uppercase;right:3px}
+div.search_results{display:block;font-size:14px;font-family:Arial,sans-serif}
+div.search_results.faq{display:block;font-size:14px;font-family:Arial,sans-serif;margin-top:20px}
+div.search_results div.results_count{margin:0;border-bottom:1px solid #e3e3e3;padding-bottom:25px}
+div.search_results .keyMatch{padding:20px;margin:10px -20px 0 -20px;background:#f5f5f5}
+div.search_results .keyMatch h2{font-size:18px}
+div.search_results ul.results{margin:0;padding:0}
+div.search_results ul.results li a:focus-visible h2{outline:2px solid var(--color-button-primary);outline-offset:2px;border-radius:4px}
+div.search_results ul.results li{display:block;padding:20px 0 20px 0;border-bottom:solid 1px #e3e3e3;background:0;padding-left:0 !important}
+div.search_results ul.results li a h2{color:#0274bf;font-size:18px;margin:0 0 10px 0;padding:0;font-family:Arial,sans-serif}
+div.search_results ul.results li a h2 strong{font-family:Arial,sans-serif;font-weight:bold}
+div.search_results ul.results li a h2:hover{text-decoration:underline}
+div.search_results ul.results li p{font-size:14px;margin:0 0 8px 0;padding:0}
+div.search_results ul.results li p.search-path{color:var(--color-sidemenu-text);word-break:break-all;font-size:14px;margin:0}
+div.search_results div.pagination ul li,div.pagination ul li{background:0}
+@media only screen and (max-height:400px) and (max-width:599px){.search_form .page-title,body.search_page .head_bar.container{display:none !important}
+header.sitemap form#search-form{padding-top:10px}
+.sm_searchform #sub_header{height:60px}
+}
+@media only screen and (max-width:959px){#sub_header div.sub_header_content.container h1{margin-top:15px}
+}
+@media only screen and (max-width:599px){div.search_results .pagination ul>li{padding-left:0 !important}
+}

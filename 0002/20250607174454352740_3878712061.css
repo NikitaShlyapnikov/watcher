@@ -1,0 +1,5 @@
+#tables table tr th:nth-child(1),#tables table tr td:nth-child(1){width:20%}
+#tables table tr th:nth-child(2),#tables table tr td:nth-child(2){width:30%}
+#tables table tr th,#tables table tr td{word-wrap:break-word}
+#tables table{table-layout:fixed}
+.form-control{margin-bottom:20px}

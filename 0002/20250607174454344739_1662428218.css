@@ -1,0 +1,12 @@
+section div.mid_wrapper div.faq_container ul{margin:0}
+section div.mid_wrapper div.faq_container ul span+ul{margin-top:7px}
+section div.mid_wrapper div.faq_container span.large{line-height:1.4em}
+section div.mid_wrapper div.faq_container ul li{display:block;list-style:none;clear:both}
+section div.mid_wrapper div.faq_container ul li div.img{float:left;width:140px;border-radius:50%;margin-right:15px;overflow:hidden}
+section div.mid_wrapper div.faq_container ul li.even div.img{float:right}
+section div.mid_wrapper div.faq_container ul li div.question{position:relative;display:block;width:740px;float:left;padding-left:28px;margin-top:50px}
+section div.mid_wrapper div.faq_container ul li div.question a{width:18px;height:18px;display:block;position:absolute;left:0;top:3px;background:url('img2.gif') left top no-repeat}
+section div.mid_wrapper div.faq_container ul li div.question.active a{background-position:0 -18px}
+section div.mid_wrapper div.faq_container ul li div.question h3{padding:0;margin:0 0 10px 0;cursor:pointer;font-size:18px}
+section div.mid_wrapper div.faq_container ul li div.question div.answer{display:none;margin:10px 0 0 0}
+section div.mid_wrapper div.faq_container ul li div.question div.answer p{margin:0 0 15px 0;font-size:14px}

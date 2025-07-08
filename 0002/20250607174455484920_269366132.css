@@ -1,0 +1,1991 @@
+/**
+ * Bootstrap 3 IE7 Fix
+==============================================================================*/
+html{font-size:100%}
+img{width:auto;height:auto;-ms-interpolation-mode:bicubic;zoom:1}
+input[type="file"],input[type="image"],input[type="submit"],input[type="reset"],input[type="button"],input[type="radio"],input[type="checkbox"]{width:auto;zoom:1}
+button,input{overflow:visible;zoom:1}
+input[type="radio"],input[type="checkbox"]{margin-top:0;line-height:normal;min-height:20px;display:inline;vertical-align:middle;zoom:1}
+select,input[type="file"]{margin-top:4px}
+input,button,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+input[type="text"],input[type="password"],input[type="email"]{*height:18px;*padding-top:6px;*padding-left:10px}
+input[type="text"].input-lg,input[type="password"].input-lg,input[type="email"].input-lg{height:22px;padding-top:6px;padding-left:10px}
+input[type="text"].input-sm,input[type="password"].input-sm,input[type="email"].input-sm{height:16px;padding-top:4px;padding-left:10px;font-size:12px}
+.row{clear:both;display:block;margin:0;width:100%;zoom:1}
+.row:before,.row:after{zoom:1}
+.page-header{display:block;clear:both;zoom:1}
+.btn{margin-left:.3em !important;border:0;z-index:1}
+.btn:first-child{margin-left:0 !important}
+.btn.btn-default{border:1px solid #c6c6c6;background:#fff}
+.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open .dropdown-toggle.btn-default{border:1px solid #bbb;background:#ebebeb}
+.btn-group{margin-left:.3em;display:inline;zoom:1}
+.btn-group>.btn,.btn-group-vertical>.btn{position:relative}
+.btn-group>.btn+.btn,.btn-group-vertical>.btn+.btn{margin-left:-1px !important}
+.btn-group>.btn-default+.dropdown-toggle{padding-top:5px;padding-bottom:5px}
+.btn-group>.btn-xs+.dropdown-toggle{padding-top:2px;padding-bottom:2px}
+.btn-group>.btn-sm+.dropdown-toggle{padding-top:5px;padding-bottom:4px}
+.btn-group>.btn-lg+.dropdown-toggle{padding-top:7px;padding-bottom:7px}
+.form-inline input[type="text"],.form-inline input[type="password"],.form-inline input[type="email"]{height:18px;width:150px;padding:6px 5px}
+.form-inline .radio,.form-inline .checkbox,.form-inline .radio input[type="radio"],.form-inline .checkbox input[type="checkbox"]{float:left;margin-right:3px;padding-left:0;margin-bottom:0}
+.form-inline .radio,.form-inline .checkbox{padding-top:6px}
+.navbar{position:relative;z-index:2;zoom:1}
+.navbar-form{margin-top:10px}
+.navbar-form input[type="text"],.navbar-form input[type="password"],.navbar-form input[type="email"]{height:16px;width:140px;font-size:13px;padding:5px;padding-top:5px}
+.navbar-form .btn{font-size:13px;padding:3px 9px}
+.navbar-form,.form-inline,.form-inline input,.form-horizontal input,.form-inline textarea,.form-horizontal textarea,.form-inline select,.form-horizontal select,.form-inline .uneditable-input,.form-horizontal .uneditable-input,.form-inline .input-prepend,.form-horizontal .input-prepend,.form-inline .input-append,.form-horizontal .input-append{margin-bottom:0;display:inline;zoom:1}
+.form-inline .form-group{float:left}
+.caret{text-indent:0}
+.dropdown-menu{z-index:1000;zoom:1}
+.dropdown-menu li{display:list-item;width:100%}
+.dropdown-menu .divider{width:100%;margin:0;margin:-5px 0 5px}
+.dropdown-toggle{margin-bottom:-3px}
+.open{z-index:1000;zoom:1}
+.media,.media-body{overflow:visible;zoom:1}
+a.list-group-item.active .list-group-item-heading{color:#fff}
+.sr-only{clip:rect(0 0 0 0)}
+.navbar-fixed-top,.navbar-fixed-bottom{position:fixed;right:0;left:0;z-index:1030;zoom:1}
+.input-group{white-space:nowrap;vertical-align:middle;position:relative;zoom:1}
+.input-group input{vertical-align:middle}
+.input-group .input-group-addon{width:auto;min-width:16px;height:22px;padding:4px 5px;font-size:14px;line-height:20px;vertical-align:middle;display:inline;position:relative;z-index:1;zoom:1}
+.input-group-addon{left:-5px}
+.input-group-addon:first-child{left:4px}
+.alert,.progress,.progress-bar,.clearfix,.container,.dropdown,.btn-toolbar,.nav,.navbar-header,.form-group,.jumbotron,.list-group,.panel,.panel-heading,.panel-body,.panel-footer,.well,.tab-content,.tab-pane,.carousel,.carousel-inner,.carousel-control,ul,ol,li,form,button,input,select,hr,textarea,table,tbody,table td,table th,table col,textarea{zoom:1}
+audio,canvas,video,span,label,select,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],input.form-control,.radio-inline,.checkbox-inline,.img-thumbnail,.list-inline>li,.caret,.form-inline textarea,.form-inline label,.form-horizontal textarea,.form-inline .btn-group,.btn,.btn-group-vertical,.collapse,.nav-justified>li,.breadcrumb>li,.pagination,.pagination>li,.pagination>li>span,.pager,.pager li,.pager li>a,.pager li>span,.label,.badge,.thumbnail,.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-indicators li,.help-block{display:inline;zoom:1}
+@media(min-width:768px){.form-inline .form-group,.form-inline .form-control,.form-inline .radio,.form-inline .checkbox,.navbar-form .form-group,.navbar-form .form-control,.navbar-form .radio,.navbar-form .checkbox{display:inline;zoom:1}
+}
+
+
+/**
+ * Bootstrap 3 - Grid System Fix
+==============================================================================*/
+/*.container {width: 1170px}*/
+
+.row {margin:0 0 0 -2%}
+
+.row .col-xs-1,.row .col-sm-1,.row .col-md-1,.row .col-lg-1,
+.row .col-xs-2,.row .col-sm-2,.row .col-md-2,.row .col-lg-2,
+.row .col-xs-3,.row .col-sm-3,.row .col-md-3,.row .col-lg-3,
+.row .col-xs-4,.row .col-sm-4,.row .col-md-4,.row .col-lg-4,
+.row .col-xs-5,.row .col-sm-5,.row .col-md-5,.row .col-lg-5,
+.row .col-xs-6,.row .col-sm-6,.row .col-md-6,.row .col-lg-6,
+.row .col-xs-7,.row .col-sm-7,.row .col-md-7,.row .col-lg-7,
+.row .col-xs-8,.row .col-sm-8,.row .col-md-8,.row .col-lg-8,
+.row .col-xs-9,.row .col-sm-9,.row .col-md-9,.row .col-lg-9,
+.row .col-xs-10,.row .col-sm-10,.row .col-md-10,.row .col-lg-10,
+.row .col-xs-11,.row .col-sm-11,.row .col-md-11,.row .col-lg-11,
+.row .col-xs-12,.row .col-sm-12,.row .col-md-12,.row .col-lg-12 {display:block;float:left;padding:0;margin:0;margin:0 0 0 2%;zoom:1}
+
+.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1 {width:6.333%}
+.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2 {width:14.667%}
+.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3 {width:23.0%}
+.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4 {width:31.3%}
+.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5 {width:39.667%}
+.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6 {width:48.0%}
+.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7 {width:56.333%}
+.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8 {width:64.667%}
+.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9 {width:73.0%}
+.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10 {width:81.333%}
+.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11 {width:89.667%}
+.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12 {width:98.0%}
+
+/*@media(min-width:768px){
+.col-sm-1{width:6.333%}
+.col-sm-2{width:14.667%}
+.col-sm-3{width:23.0%}
+.col-sm-4{width:31.3%}
+.col-sm-5{width:39.667%}
+.col-sm-6{width:48.0%}
+.col-sm-7{width:56.333%}
+.col-sm-8{width:64.667%}
+.col-sm-9{width:73.0%}
+.col-sm-10{width:81.333%}
+.col-sm-11{width:89.667%}
+.col-sm-12{width:98.0%}
+}
+@media(min-width:992px){
+.col-md-1{width:6.333%}
+.col-md-2{width:14.667%}
+.col-md-3{width:23.0%}
+.col-md-4{width:31.3%}
+.col-md-5{width:39.667%}
+.col-md-6{width:48.0%}
+.col-md-7{width:56.333%}
+.col-md-8{width:64.667%}
+.col-md-9{width:73.0%}
+.col-md-10{width:81.333%}
+.col-md-11{width:89.667%}
+.col-md-12{width:98.0%}
+}
+@media(min-width:1200px){
+.col-lg-1{width:6.333%}
+.col-lg-2{width:14.667%}
+.col-lg-3{width:23.0%}
+.col-lg-4{width:31.3%}
+.col-lg-5{width:39.667%}
+.col-lg-6{width:48.0%}
+.col-lg-7{width:56.333%}
+.col-lg-8{width:64.667%}
+.col-lg-9{width:73.0%}
+.col-lg-10{width:81.333%}
+.col-lg-11{width:89.667%}
+.col-lg-12{width:98.0%}
+}
+*/
+/*@media (max-width: 767px) {
+  .container {
+	width: 1170px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+	width: 1170px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+	width: 1170px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+	width: 1170px;
+  }
+}*/
+
+
+/**
+ * Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ * License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+==============================================================================*/
+.fa {*display:inline;*zoom:1;text-decoration:inherit;line-height:normal;top:2px}
+
+.fa-glass {zoom: ;;');}
+.fa-music {zoom: ;;');}
+.fa-search {zoom: ;;');}
+.fa-envelope-o {zoom: ;;');}
+.fa-heart {zoom: ;;');}
+.fa-star {zoom: ;;');}
+.fa-star-o {zoom: ;;');}
+.fa-user {zoom: ;;');}
+.fa-film {zoom: ;;');}
+.fa-th-large {zoom: ;;');}
+.fa-th {zoom: ;;');}
+.fa-th-list {zoom: ;;');}
+.fa-check {zoom: ;;');}
+.fa-remove,
+.fa-close,
+.fa-times {zoom: ;;');}
+.fa-search-plus {zoom: ;;');}
+.fa-search-minus {zoom: ;;');}
+.fa-power-off {zoom: ;;');}
+.fa-signal {zoom: ;;');}
+.fa-gear,
+.fa-cog {zoom: ;;');}
+.fa-trash-o {zoom: ;;');}
+.fa-home {zoom: ;;');}
+.fa-file-o {zoom: ;;');}
+.fa-clock-o {zoom: ;;');}
+.fa-road {zoom: ;;');}
+.fa-download {zoom: ;;');}
+.fa-arrow-circle-o-down {zoom: ;;');}
+.fa-arrow-circle-o-up {zoom: ;;');}
+.fa-inbox {zoom: ;;');}
+.fa-play-circle-o {zoom: ;;');}
+.fa-rotate-right,
+.fa-repeat {zoom: ;;');}
+.fa-refresh {zoom: ;;');}
+.fa-list-alt {zoom: ;;');}
+.fa-lock {zoom: ;;');}
+.fa-flag {zoom: ;;');}
+.fa-headphones {zoom: ;;');}
+.fa-volume-off {zoom: ;;');}
+.fa-volume-down {zoom: ;;');}
+.fa-volume-up {zoom: ;;');}
+.fa-qrcode {zoom: ;;');}
+.fa-barcode {zoom: ;;');}
+.fa-tag {zoom: ;;');}
+.fa-tags {zoom: ;;');}
+.fa-book {zoom: ;;');}
+.fa-bookmark {zoom: ;;');}
+.fa-print {zoom: ;;');}
+.fa-camera {zoom: ;;');}
+.fa-font {zoom: ;;');}
+.fa-bold {zoom: ;;');}
+.fa-italic {zoom: ;;');}
+.fa-text-height {zoom: ;;');}
+.fa-text-width {zoom: ;;');}
+.fa-align-left {zoom: ;;');}
+.fa-align-center {zoom: ;;');}
+.fa-align-right {zoom: ;;');}
+.fa-align-justify {zoom: ;;');}
+.fa-list {zoom: ;;');}
+.fa-dedent,
+.fa-outdent {zoom: ;;');}
+.fa-indent {zoom: ;;');}
+.fa-video-camera {zoom: ;;');}
+.fa-photo,
+.fa-image,
+.fa-picture-o {zoom: ;;');}
+.fa-pencil {zoom: ;;');}
+.fa-map-marker {zoom: ;;');}
+.fa-adjust {zoom: ;;');}
+.fa-tint {zoom: ;;');}
+.fa-edit,
+.fa-pencil-square-o {zoom: ;;');}
+.fa-share-square-o {zoom: ;;');}
+.fa-check-square-o {zoom: ;;');}
+.fa-arrows {zoom: ;;');}
+.fa-step-backward {zoom: ;;');}
+.fa-fast-backward {zoom: ;;');}
+.fa-backward {zoom: ;;');}
+.fa-play {zoom: ;;');}
+.fa-pause {zoom: ;;');}
+.fa-stop {zoom: ;;');}
+.fa-forward {zoom: ;;');}
+.fa-fast-forward {zoom: ;;');}
+.fa-step-forward {zoom: ;;');}
+.fa-eject {zoom: ;;');}
+.fa-chevron-left {zoom: ;;');}
+.fa-chevron-right {zoom: ;;');}
+.fa-plus-circle {zoom: ;;');}
+.fa-minus-circle {zoom: ;;');}
+.fa-times-circle {zoom: ;;');}
+.fa-check-circle {zoom: ;;');}
+.fa-question-circle {zoom: ;;');}
+.fa-info-circle {zoom: ;;');}
+.fa-crosshairs {zoom: ;;');}
+.fa-times-circle-o {zoom: ;;');}
+.fa-check-circle-o {zoom: ;;');}
+.fa-ban {zoom: ;;');}
+.fa-arrow-left {zoom: ;;');}
+.fa-arrow-right {zoom: ;;');}
+.fa-arrow-up {zoom: ;;');}
+.fa-arrow-down {zoom: ;;');}
+.fa-mail-forward,
+.fa-share {zoom: ;;');}
+.fa-expand {zoom: ;;');}
+.fa-compress {zoom: ;;');}
+.fa-plus {zoom: ;;');}
+.fa-minus {zoom: ;;');}
+.fa-asterisk {zoom: ;;');}
+.fa-exclamation-circle {zoom: ;;');}
+.fa-gift {zoom: ;;');}
+.fa-leaf {zoom: ;;');}
+.fa-fire {zoom: ;;');}
+.fa-eye {zoom: ;;');}
+.fa-eye-slash {zoom: ;;');}
+.fa-warning,
+.fa-exclamation-triangle {zoom: ;;');}
+.fa-plane {zoom: ;;');}
+.fa-calendar {zoom: ;;');}
+.fa-random {zoom: ;;');}
+.fa-comment {zoom: ;;');}
+.fa-magnet {zoom: ;;');}
+.fa-chevron-up {zoom: ;;');}
+.fa-chevron-down {zoom: ;;');}
+.fa-retweet {zoom: ;;');}
+.fa-shopping-cart {zoom: ;;');}
+.fa-folder {zoom: ;;');}
+.fa-folder-open {zoom: ;;');}
+.fa-arrows-v {zoom: ;;');}
+.fa-arrows-h {zoom: ;;');}
+.fa-bar-chart-o,
+.fa-bar-chart {zoom: ;;');}
+.fa-twitter-square {zoom: ;;');}
+.fa-facebook-square {zoom: ;;');}
+.fa-camera-retro {zoom: ;;');}
+.fa-key {zoom: ;;');}
+.fa-gears,
+.fa-cogs {zoom: ;;');}
+.fa-comments {zoom: ;;');}
+.fa-thumbs-o-up {zoom: ;;');}
+.fa-thumbs-o-down {zoom: ;;');}
+.fa-star-half {zoom: ;;');}
+.fa-heart-o {zoom: ;;');}
+.fa-sign-out {zoom: ;;');}
+.fa-linkedin-square {zoom: ;;');}
+.fa-thumb-tack {zoom: ;;');}
+.fa-external-link {zoom: ;;');}
+.fa-sign-in {zoom: ;;');}
+.fa-trophy {zoom: ;;');}
+.fa-github-square {zoom: ;;');}
+.fa-upload {zoom: ;;');}
+.fa-lemon-o {zoom: ;;');}
+.fa-phone {zoom: ;;');}
+.fa-square-o {zoom: ;;');}
+.fa-bookmark-o {zoom: ;;');}
+.fa-phone-square {zoom: ;;');}
+.fa-twitter {zoom: ;;');}
+.fa-facebook-f,
+.fa-facebook {zoom: ;;');}
+.fa-telegram {zoom: ;;');}
+.fa-github {zoom: ;;');}
+.fa-unlock {zoom: ;;');}
+.fa-credit-card {zoom: ;;');}
+.fa-rss {zoom: ;;');}
+.fa-hdd-o {zoom: ;;');}
+.fa-bullhorn {zoom: ;;');}
+.fa-bell {zoom: ;;');}
+.fa-certificate {zoom: ;;');}
+.fa-hand-o-right {zoom: ;;');}
+.fa-hand-o-left {zoom: ;;');}
+.fa-hand-o-up {zoom: ;;');}
+.fa-hand-o-down {zoom: ;;');}
+.fa-arrow-circle-left {zoom: ;;');}
+.fa-arrow-circle-right {zoom: ;;');}
+.fa-arrow-circle-up {zoom: ;;');}
+.fa-arrow-circle-down {zoom: ;;');}
+.fa-globe {zoom: ;;');}
+.fa-wrench {zoom: ;;');}
+.fa-tasks {zoom: ;;');}
+.fa-filter {zoom: ;;');}
+.fa-briefcase {zoom: ;;');}
+.fa-arrows-alt {zoom: ;;');}
+.fa-group,
+.fa-users {zoom: ;;');}
+.fa-chain,
+.fa-link {zoom: ;;');}
+.fa-cloud {zoom: ;;');}
+.fa-flask {zoom: ;;');}
+.fa-cut,
+.fa-scissors {zoom: ;;');}
+.fa-copy,
+.fa-files-o {zoom: ;;');}
+.fa-paperclip {zoom: ;;');}
+.fa-save,
+.fa-floppy-o {zoom: ;;');}
+.fa-square {zoom: ;;');}
+.fa-navicon,
+.fa-reorder,
+.fa-bars {zoom: ;;');}
+.fa-list-ul {zoom: ;;');}
+.fa-list-ol {zoom: ;;');}
+.fa-strikethrough {zoom: ;;');}
+.fa-underline {zoom: ;;');}
+.fa-table {zoom: ;;');}
+.fa-magic {zoom: ;;');}
+.fa-truck {zoom: ;;');}
+.fa-pinterest {zoom: ;;');}
+.fa-pinterest-square {zoom: ;;');}
+.fa-google-plus-square {zoom: ;;');}
+.fa-google-plus {zoom: ;;');}
+.fa-money {zoom: ;;');}
+.fa-caret-down {zoom: ;;');}
+.fa-caret-up {zoom: ;;');}
+.fa-caret-left {zoom: ;;');}
+.fa-caret-right {zoom: ;;');}
+.fa-columns {zoom: ;;');}
+.fa-unsorted,
+.fa-sort {zoom: ;;');}
+.fa-sort-down,
+.fa-sort-desc {zoom: ;;');}
+.fa-sort-up,
+.fa-sort-asc {zoom: ;;');}
+.fa-envelope {zoom: ;;');}
+.fa-linkedin {zoom: ;;');}
+.fa-rotate-left,
+.fa-undo {zoom: ;;');}
+.fa-legal,
+.fa-gavel {zoom: ;;');}
+.fa-dashboard,
+.fa-tachometer {zoom: ;;');}
+.fa-comment-o {zoom: ;;');}
+.fa-comments-o {zoom: ;;');}
+.fa-flash,
+.fa-bolt {zoom: ;;');}
+.fa-sitemap {zoom: ;;');}
+.fa-umbrella {zoom: ;;');}
+.fa-paste,
+.fa-clipboard {zoom: ;;');}
+.fa-lightbulb-o {zoom: ;;');}
+.fa-exchange {zoom: ;;');}
+.fa-cloud-download {zoom: ;;');}
+.fa-cloud-upload {zoom: ;;');}
+.fa-user-md {zoom: ;;');}
+.fa-stethoscope {zoom: ;;');}
+.fa-suitcase {zoom: ;;');}
+.fa-bell-o {zoom: ;;');}
+.fa-coffee {zoom: ;;');}
+.fa-cutlery {zoom: ;;');}
+.fa-file-text-o {zoom: ;;');}
+.fa-building-o {zoom: ;;');}
+.fa-hospital-o {zoom: ;;');}
+.fa-ambulance {zoom: ;;');}
+.fa-medkit {zoom: ;;');}
+.fa-fighter-jet {zoom: ;;');}
+.fa-beer {zoom: ;;');}
+.fa-h-square {zoom: ;;');}
+.fa-plus-square {zoom: ;;');}
+.fa-angle-double-left {zoom: ;;');}
+.fa-angle-double-right {zoom: ;;');}
+.fa-angle-double-up {zoom: ;;');}
+.fa-angle-double-down {zoom: ;;');}
+.fa-angle-left {zoom: ;;');}
+.fa-angle-right {zoom: ;;');}
+.fa-angle-up {zoom: ;;');}
+.fa-angle-down {zoom: ;;');}
+.fa-desktop {zoom: ;;');}
+.fa-laptop {zoom: ;;');}
+.fa-tablet {zoom: ;;');}
+.fa-mobile-phone,
+.fa-mobile {zoom: ;;');}
+.fa-circle-o {zoom: ;;');}
+.fa-quote-left {zoom: ;;');}
+.fa-quote-right {zoom: ;;');}
+.fa-spinner {zoom: ;;');}
+.fa-circle {zoom: ;;');}
+.fa-mail-reply,
+.fa-reply {zoom: ;;');}
+.fa-github-alt {zoom: ;;');}
+.fa-folder-o {zoom: ;;');}
+.fa-folder-open-o {zoom: ;;');}
+.fa-smile-o {zoom: ;;');}
+.fa-frown-o {zoom: ;;');}
+.fa-meh-o {zoom: ;;');}
+.fa-gamepad {zoom: ;;');}
+.fa-keyboard-o {zoom: ;;');}
+.fa-flag-o {zoom: ;;');}
+.fa-flag-checkered {zoom: ;;');}
+.fa-terminal {zoom: ;;');}
+.fa-code {zoom: ;;');}
+.fa-mail-reply-all,
+.fa-reply-all {zoom: ;;');}
+.fa-star-half-empty,
+.fa-star-half-full,
+.fa-star-half-o {zoom: ;;');}
+.fa-location-arrow {zoom: ;;');}
+.fa-crop {zoom: ;;');}
+.fa-code-fork {zoom: ;;');}
+.fa-unlink,
+.fa-chain-broken {zoom: ;;');}
+.fa-question {zoom: ;;');}
+.fa-info {zoom: ;;');}
+.fa-exclamation {zoom: ;;');}
+.fa-superscript {zoom: ;;');}
+.fa-subscript {zoom: ;;');}
+.fa-eraser {zoom: ;;');}
+.fa-puzzle-piece {zoom: ;;');}
+.fa-microphone {zoom: ;;');}
+.fa-microphone-slash {zoom: ;;');}
+.fa-shield {zoom: ;;');}
+.fa-calendar-o {zoom: ;;');}
+.fa-fire-extinguisher {zoom: ;;');}
+.fa-rocket {zoom: ;;');}
+.fa-maxcdn {zoom: ;;');}
+.fa-chevron-circle-left {zoom: ;;');}
+.fa-chevron-circle-right {zoom: ;;');}
+.fa-chevron-circle-up {zoom: ;;');}
+.fa-chevron-circle-down {zoom: ;;');}
+.fa-html5 {zoom: ;;');}
+.fa-css3 {zoom: ;;');}
+.fa-anchor {zoom: ;;');}
+.fa-unlock-alt {zoom: ;;');}
+.fa-bullseye {zoom: ;;');}
+.fa-ellipsis-h {zoom: ;;');}
+.fa-ellipsis-v {zoom: ;;');}
+.fa-rss-square {zoom: ;;');}
+.fa-play-circle {zoom: ;;');}
+.fa-ticket {zoom: ;;');}
+.fa-minus-square {zoom: ;;');}
+.fa-minus-square-o {zoom: ;;');}
+.fa-level-up {zoom: ;;');}
+.fa-level-down {zoom: ;;');}
+.fa-check-square {zoom: ;;');}
+.fa-pencil-square {zoom: ;;');}
+.fa-external-link-square {zoom: ;;');}
+.fa-share-square {zoom: ;;');}
+.fa-compass {zoom: ;;');}
+.fa-toggle-down,
+.fa-caret-square-o-down {zoom: ;;');}
+.fa-toggle-up,
+.fa-caret-square-o-up {zoom: ;;');}
+.fa-toggle-right,
+.fa-caret-square-o-right {zoom: ;;');}
+.fa-euro,
+.fa-eur {zoom: ;;');}
+.fa-gbp {zoom: ;;');}
+.fa-dollar,
+.fa-usd {zoom: ;;');}
+.fa-rupee,
+.fa-inr {zoom: ;;');}
+.fa-cny,
+.fa-rmb,
+.fa-yen,
+.fa-jpy {zoom: ;;');}
+.fa-ruble,
+.fa-rouble,
+.fa-rub {zoom: ;;');}
+.fa-won,
+.fa-krw {zoom: ;;');}
+.fa-bitcoin,
+.fa-btc {zoom: ;;');}
+.fa-file {zoom: ;;');}
+.fa-file-text {zoom: ;;');}
+.fa-sort-alpha-asc {zoom: ;;');}
+.fa-sort-alpha-desc {zoom: ;;');}
+.fa-sort-amount-asc {zoom: ;;');}
+.fa-sort-amount-desc {zoom: ;;');}
+.fa-sort-numeric-asc {zoom: ;;');}
+.fa-sort-numeric-desc {zoom: ;;');}
+.fa-thumbs-up {zoom: ;;');}
+.fa-thumbs-down {zoom: ;;');}
+.fa-youtube-square {zoom: ;;');}
+.fa-youtube {zoom: ;;');}
+.fa-xing {zoom: ;;');}
+.fa-xing-square {zoom: ;;');}
+.fa-youtube-play {zoom: ;;');}
+.fa-dropbox {zoom: ;;');}
+.fa-stack-overflow {zoom: ;;');}
+.fa-instagram {zoom: ;;');}
+.fa-flickr {zoom: ;;');}
+.fa-adn {zoom: ;;');}
+.fa-bitbucket {zoom: ;;');}
+.fa-bitbucket-square {zoom: ;;');}
+.fa-tumblr {zoom: ;;');}
+.fa-tumblr-square {zoom: ;;');}
+.fa-long-arrow-down {zoom: ;;');}
+.fa-long-arrow-up {zoom: ;;');}
+.fa-long-arrow-left {zoom: ;;');}
+.fa-long-arrow-right {zoom: ;;');}
+.fa-apple {zoom: ;;');}
+.fa-windows {zoom: ;;');}
+.fa-android {zoom: ;;');}
+.fa-linux {zoom: ;;');}
+.fa-dribbble {zoom: ;;');}
+.fa-skype {zoom: ;;');}
+.fa-foursquare {zoom: ;;');}
+.fa-trello {zoom: ;;');}
+.fa-female {zoom: ;;');}
+.fa-male {zoom: ;;');}
+.fa-gittip,
+.fa-gratipay {zoom: ;;');}
+.fa-sun-o {zoom: ;;');}
+.fa-moon-o {zoom: ;;');}
+.fa-archive {zoom: ;;');}
+.fa-bug {zoom: ;;');}
+.fa-vk {zoom: ;;');}
+.fa-weibo {zoom: ;;');}
+.fa-renren {zoom: ;;');}
+.fa-pagelines {zoom: ;;');}
+.fa-stack-exchange {zoom: ;;');}
+.fa-arrow-circle-o-right {zoom: ;;');}
+.fa-arrow-circle-o-left {zoom: ;;');}
+.fa-toggle-left,
+.fa-caret-square-o-left {zoom: ;;');}
+.fa-dot-circle-o {zoom: ;;');}
+.fa-wheelchair {zoom: ;;');}
+.fa-vimeo-square {zoom: ;;');}
+.fa-turkish-lira,
+.fa-try {zoom: ;;');}
+.fa-plus-square-o {zoom: ;;');}
+.fa-space-shuttle {zoom: ;;');}
+.fa-slack {zoom: ;;');}
+.fa-envelope-square {zoom: ;;');}
+.fa-wordpress {zoom: ;;');}
+.fa-openid {zoom: ;;');}
+.fa-institution,
+.fa-bank,
+.fa-university {zoom: ;;');}
+.fa-mortar-board,
+.fa-graduation-cap {zoom: ;;');}
+.fa-yahoo {zoom: ;;');}
+.fa-google {zoom: ;;');}
+.fa-reddit {zoom: ;;');}
+.fa-reddit-square {zoom: ;;');}
+.fa-stumbleupon-circle {zoom: ;;');}
+.fa-stumbleupon {zoom: ;;');}
+.fa-delicious {zoom: ;;');}
+.fa-digg {zoom: ;;');}
+.fa-pied-piper {zoom: ;;');}
+.fa-pied-piper-alt {zoom: ;;');}
+.fa-drupal {zoom: ;;');}
+.fa-joomla {zoom: ;;');}
+.fa-language {zoom: ;;');}
+.fa-fax {zoom: ;;');}
+.fa-building {zoom: ;;');}
+.fa-child {zoom: ;;');}
+.fa-paw {zoom: ;;');}
+.fa-spoon {zoom: ;;');}
+.fa-cube {zoom: ;;');}
+.fa-cubes {zoom: ;;');}
+.fa-behance {zoom: ;;');}
+.fa-behance-square {zoom: ;;');}
+.fa-steam {zoom: ;;');}
+.fa-steam-square {zoom: ;;');}
+.fa-recycle {zoom: ;;');}
+.fa-automobile,
+.fa-car {zoom: ;;');}
+.fa-cab,
+.fa-taxi {zoom: ;;');}
+.fa-tree {zoom: ;;');}
+.fa-spotify {zoom: ;;');}
+.fa-deviantart {zoom: ;;');}
+.fa-soundcloud {zoom: ;;');}
+.fa-database {zoom: ;;');}
+.fa-file-pdf-o {zoom: ;;');}
+.fa-file-word-o {zoom: ;;');}
+.fa-file-excel-o {zoom: ;;');}
+.fa-file-powerpoint-o {zoom: ;;');}
+.fa-file-photo-o,
+.fa-file-picture-o,
+.fa-file-image-o {zoom: ;;');}
+.fa-file-zip-o,
+.fa-file-archive-o {zoom: ;;');}
+.fa-file-sound-o,
+.fa-file-audio-o {zoom: ;;');}
+.fa-file-movie-o,
+.fa-file-video-o {zoom: ;;');}
+.fa-file-code-o {zoom: ;;');}
+.fa-vine {zoom: ;;');}
+.fa-codepen {zoom: ;;');}
+.fa-jsfiddle {zoom: ;;');}
+.fa-life-bouy,
+.fa-life-buoy,
+.fa-life-saver,
+.fa-support,
+.fa-life-ring {zoom: ;;');}
+.fa-circle-o-notch {zoom: ;;');}
+.fa-ra,
+.fa-rebel {zoom: ;;');}
+.fa-ge,
+.fa-empire {zoom: ;;');}
+.fa-git-square {zoom: ;;');}
+.fa-git {zoom: ;;');}
+.fa-hacker-news {zoom: ;;');}
+.fa-tencent-weibo {zoom: ;;');}
+.fa-qq {zoom: ;;');}
+.fa-wechat,
+.fa-weixin {zoom: ;;');}
+.fa-send,
+.fa-paper-plane {zoom: ;;');}
+.fa-send-o,
+.fa-paper-plane-o {zoom: ;;');}
+.fa-history {zoom: ;;');}
+.fa-genderless,
+.fa-circle-thin {zoom: ;;');}
+.fa-header {zoom: ;;');}
+.fa-paragraph {zoom: ;;');}
+.fa-sliders {zoom: ;;');}
+.fa-share-alt {zoom: ;;');}
+.fa-share-alt-square {zoom: ;;');}
+.fa-bomb {zoom: ;;');}
+.fa-soccer-ball-o,
+.fa-futbol-o {zoom: ;;');}
+.fa-tty {zoom: ;;');}
+.fa-binoculars {zoom: ;;');}
+.fa-plug {zoom: ;;');}
+.fa-slideshare {zoom: ;;');}
+.fa-twitch {zoom: ;;');}
+.fa-yelp {zoom: ;;}
+.fa-newspaper-o {zoom: ;;');}
+.fa-wifi {zoom: ;;');}
+.fa-calculator {zoom: ;;');}
+.fa-paypal {zoom: ;;');}
+.fa-google-wallet {zoom: ;;');}
+.fa-cc-visa {zoom: ;;');}
+.fa-cc-mastercard {zoom: ;;');}
+.fa-cc-discover {zoom: ;;');}
+.fa-cc-amex {zoom: ;;');}
+.fa-cc-paypal {zoom: ;;');}
+.fa-cc-stripe {zoom: ;;');}
+.fa-bell-slash {zoom: ;;');}
+.fa-bell-slash-o {zoom: ;;');}
+.fa-trash {zoom: ;;');}
+.fa-copyright {zoom: ;;');}
+.fa-at {zoom: ;;');}
+.fa-eyedropper {zoom: ;;');}
+.fa-paint-brush {zoom: ;;');}
+.fa-birthday-cake {zoom: ;;');}
+.fa-area-chart {zoom: ;;');}
+.fa-pie-chart {zoom: ;;');}
+.fa-line-chart {zoom: ;;');}
+.fa-lastfm {zoom: ;;');}
+.fa-lastfm-square {zoom: ;;');}
+.fa-toggle-off {zoom: ;;');}
+.fa-toggle-on {zoom: ;;');}
+.fa-bicycle {zoom: ;;');}
+.fa-bus {zoom: ;;');}
+.fa-ioxhost {zoom: ;;');}
+.fa-angellist {zoom: ;;');}
+.fa-cc {zoom: ;;');}
+.fa-shekel,
+.fa-sheqel,
+.fa-ils {zoom: ;;');}
+.fa-meanpath {zoom: ;;');}
+.fa-buysellads {zoom: ;;');}
+.fa-connectdevelop {zoom: ;;');}
+.fa-dashcube {zoom: ;;');}
+.fa-forumbee {zoom: ;;');}
+.fa-leanpub {zoom: ;;');}
+.fa-sellsy {zoom: ;;');}
+.fa-shirtsinbulk {zoom: ;;');}
+.fa-simplybuilt {zoom: ;;');}
+.fa-skyatlas {zoom: ;;');}
+.fa-cart-plus {zoom: ;;');}
+.fa-cart-arrow-down {zoom: ;;');}
+.fa-diamond {zoom: ;;');}
+.fa-ship {zoom: ;;');}
+.fa-user-secret {zoom: ;;');}
+.fa-motorcycle {zoom: ;;');}
+.fa-street-view {zoom: ;;');}
+.fa-heartbeat {zoom: ;;');}
+.fa-venus {zoom: ;;');}
+.fa-mars {zoom: ;;');}
+.fa-mercury {zoom: ;;');}
+.fa-transgender {zoom: ;;');}
+.fa-transgender-alt {zoom: ;;');}
+.fa-venus-double {zoom: ;;');}
+.fa-mars-double {zoom: ;;');}
+.fa-venus-mars {zoom: ;;');}
+.fa-mars-stroke {zoom: ;;');}
+.fa-mars-stroke-v {zoom: ;;');}
+.fa-mars-stroke-h {zoom: ;;');}
+.fa-neuter {zoom: ;;');}
+.fa-facebook-official {zoom: ;;');}
+.fa-pinterest-p {zoom: ;;');}
+.fa-whatsapp {zoom: ;;');}
+.fa-server {zoom: ;;');}
+.fa-user-plus {zoom: ;;');}
+.fa-user-times {zoom: ;;');}
+.fa-hotel,
+.fa-bed {zoom: ;;');}
+.fa-viacoin {zoom: ;;');}
+.fa-train {zoom: ;;');}
+.fa-subway {zoom: ;;');}
+.fa-medium {zoom: ;;');}
+.fa-calendar-plus-o {zoom: ;;');}
+.fa-yc,
+.fa-y-combinator {zoom: ;;');}
+.fa-optin-monster {zoom: ;;');}
+.fa-opencart {zoom: ;;');}
+.fa-expeditedssl {zoom: ;;');}
+.fa-battery-4,
+.fa-battery-full {zoom: ;;');}
+.fa-battery-3,
+.fa-battery-three-quarters {zoom: ;;');}
+.fa-battery-2,
+.fa-battery-half {zoom: ;;');}
+.fa-battery-1,
+.fa-battery-quarter {zoom: ;;');}
+.fa-battery-0,
+.fa-battery-empty {zoom: ;;');}
+.fa-mouse-pointer {zoom: ;;');}
+.fa-i-cursor {zoom: ;;');}
+.fa-object-group {zoom: ;;');}
+.fa-object-ungroup {zoom: ;;');}
+.fa-sticky-note {zoom: ;;');}
+.fa-sticky-note-o {zoom: ;;');}
+.fa-cc-jcb {zoom: ;;');}
+.fa-cc-diners-club {zoom: ;;');}
+.fa-clone:before {zoom: ;;');}
+.fa-balance-scale:before {zoom: ;;');}
+.fa-hourglass-o:before {zoom: ;;');}
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {zoom: ;;');}
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {zoom: ;;');}
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {zoom: ;;');}
+.fa-hourglass:before {zoom: ;;');}
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {zoom: ;;');}
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {zoom: ;;');}
+.fa-hand-scissors-o:before {zoom: ;;');}
+.fa-hand-lizard-o:before {zoom: ;;');}
+.fa-hand-spock-o:before {zoom: ;;');}
+.fa-hand-pointer-o:before {zoom: ;;');}
+.fa-hand-peace-o:before {zoom: ;;');}
+.fa-trademark:before {zoom: ;;');}
+.fa-registered:before {zoom: ;;');}
+.fa-creative-commons:before {zoom: ;;');}
+.fa-gg:before {zoom: ;;');}
+.fa-gg-circle:before {zoom: ;;');}
+.fa-tripadvisor:before {zoom: ;;');}
+.fa-odnoklassniki:before {zoom: ;;');}
+.fa-odnoklassniki-square:before {zoom: ;;');}
+.fa-get-pocket:before {zoom: ;;');}
+.fa-wikipedia-w:before {zoom: ;;');}
+.fa-safari:before {zoom: ;;');}
+.fa-chrome:before {zoom: ;;');}
+.fa-firefox:before {zoom: ;;');}
+.fa-opera:before {zoom: ;;');}
+.fa-internet-explorer:before {zoom: ;;');}
+.fa-tv:before,
+.fa-television:before {zoom: ;;');}
+.fa-contao:before {zoom: ;;');}
+.fa-500px:before {zoom: ;;');}
+.fa-amazon:before {zoom: ;;');}
+.fa-calendar-plus-o:before {zoom: ;;');}
+.fa-calendar-minus-o:before {zoom: ;;');}
+.fa-calendar-times-o:before {zoom: ;;');}
+.fa-calendar-check-o:before {zoom: ;;');}
+.fa-industry:before {zoom: ;;');}
+.fa-map-pin:before {zoom: ;;');}
+.fa-map-signs:before {zoom: ;;');}
+.fa-map-o:before {zoom: ;;');}
+.fa-map:before {zoom: ;;');}
+.fa-commenting:before {zoom: ;;');}
+.fa-commenting-o:before {zoom: ;;');}
+.fa-houzz:before {zoom: ;;');}
+.fa-vimeo:before {zoom: ;;');}
+.fa-black-tie:before {zoom: ;;');}
+.fa-fonticons:before {zoom: ;;');}
+
+
+/* Project Styles
+==============================================================================*/
+a,
+button {
+  cursor: pointer;
+}
+
+#widgets-toggle {
+  left: 95%;
+}
+
+#widgets .checkbox label {
+  display: block;
+}
+
+#widgets .checkbox input {
+  margin: -4px 5px 5px -20px;
+  *margin: -2px 5px 5px -25px;
+}
+
+#widgets-save {
+  *padding: 0 3px;
+}
+
+.topbar .topbar-content {
+  border-bottom: 2px solid #AF222B;
+}
+
+.topbar .activities-icons li {
+  *width: 65px;
+  padding: 0;
+}
+
+.topbar .activities i {
+  filter: alpha(opacity=50);
+}
+
+.topbar .activities-icons a:hover i,
+.topbar .activities-icons .open i {
+  filter: alpha(opacity=100);
+}
+
+.topbar .activities-list li {
+  width: 120px;
+  display: block;
+  float: left;
+  zoom: 1;
+}
+
+.topbar .global-nav {
+  padding: 5px 0 0 0;
+}
+
+.topbar .global-nav .search {
+  width: 210px;
+  *margin: -2px 0 0;
+  min-width: 0;
+}
+
+.dropdown-toggle_search-btn {
+  *display: none !important;
+}
+
+.topbar .global-nav .search .input-group {
+  overflow: hidden;
+}
+
+.topbar .global-nav .search .form-control {
+  width: 176px;
+  *width: 161px;
+  *height: 18px;
+  padding: 0 5px 2px 5px;
+  float: left;
+}
+
+.topbar .global-nav .search .input-group-btn {
+  float: left;
+}
+
+.topbar .global-nav .search .btn {
+  *height: 22px;
+}
+
+.topbar .global-nav .search .btn .fa {
+  vertical-align: 1px;
+}
+.topbar .global-nav .btn-link {
+  position: relative;
+}
+
+.topbar .global-nav .caret {
+  position: absolute;
+  right: -15px;
+  top: 9px;
+  *top: 12px;
+}
+
+.topbar .global-nav .global-menu {
+  *margin-top: 3px;
+}
+
+.topbar .global-nav .global-menu-controls {
+  *margin-top: 5px;
+}
+
+.topbar .global-nav .global-menu-controls > li > a {
+  *display: inline;
+  *zoom: 1;
+  *vertical-align: top;
+  *margin: 0;
+}
+
+#lang.dropdown > a {
+  *margin-top: -2px;
+}
+
+.topbar .global-nav .global-menu > li.choose-country {
+  *margin-top: 2px;
+}
+
+.topbar .global-nav .global-menu-controls .caret,
+.topbar .global-nav .global-menu .caret {
+  right: -5px;
+  top: 10px;
+}
+
+.navbar {
+  border: 1px solid #000000;
+  *margin: 0;
+  *position: absolute;
+  *top: 40px;
+  *left: 0;
+}
+
+.navbar .logo-main {
+  background: url("img2.gif") no-repeat 0 8px;
+}
+
+.navbar .resize-font {
+  margin: 10px -15px 9px 0;
+  *margin: 8px -15px 6px 0;
+}
+
+.navbar .resize-font li {
+  *margin: 0 0 0 5px;
+  display: inline;
+  zoom: 1;
+}
+
+.navbar .resize-font li.normal button {
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: bottom;
+  outline: 0;
+}
+
+.navbar .resize-font li.medium button {
+  font-size: 14px;
+  vertical-align: bottom;
+  outline: 0;
+}
+
+.navbar .resize-font li.large button {
+  font-size: 16px;
+  vertical-align: bottom;
+  outline: 0;
+}
+
+.submenu-col {
+  *padding: 0;
+  *width: 27.5%;
+}
+
+.submenu-item {
+  *padding-left: 49px;
+}
+
+.submenu-col:first-child .submenu-item {
+  *padding-left: 0;
+}
+
+.subsidiary .welcome {
+  *margin-top: -19px;
+}
+
+.subsidiary .title-fixed {
+  *top: 116px;
+}
+
+.index-page.subsidiary .fly.title-fixed {
+  padding-bottom: 7px;
+}
+
+.infoblock-red .plus .more-info:hover {
+  text-decoration: none;
+}
+
+.content ul {
+  *margin: 0;
+}
+
+.infoblock-grey h3 {
+  *height: 40px;
+}
+
+.infoblock-grey .image img {
+  width: 100%;
+}
+
+.infoblock-grey .text {
+  overflow: visible;
+}
+
+.infoblock-grey .plus li,
+.infoblock-grey .cards li {
+  display: inline;
+  zoom: 1;
+}
+
+.infoblock-grey .plus .dropdown-menu {
+  margin-top: 2px;
+  *margin-top: 3px;
+}
+
+.infoblock-grey .plus .dropdown a,
+.infoblock-grey .plus .dropdown-menu li a,
+.dropdown-menu_fly.dropdown-menu li a {
+  *width: 70px;
+}
+
+.infoblock-grey .dropdown-menu a,
+.dropdown-menu.dropdown-menu_fly li a {
+  *height: 23px;
+}
+
+.infoblock-grey .plus .caret {
+  *position: absolute;
+  *right: 10px;
+  *top: 0;
+}
+
+.two-photo.panel-list-photo img {
+  width: 49.8%;
+}
+
+.three-photo.panel-list-photo img {
+  width: 33.2%;
+}
+
+.media-content-item i {
+  *vertical-align: middle;
+}
+
+.gas-services__item,
+.gas-services__price,
+.gas-services__text {
+  *display: inline;
+  *zoom: 1;
+}
+
+.gas-services__item {
+  width: 160px;
+}
+
+.gasline .gas-services__item {
+  width: 240px;
+}
+
+.sidebar-black,
+.sidebar-red {
+  margin-left: 0;
+}
+
+.sidebar-black h2,
+.sidebar-red h2 {
+  display: block;
+  position: relative;
+}
+
+.content-block-right .image-wrap img {
+  width: 100%;
+}
+
+.calendar-widget .ui-datepicker.ui-widget-content {
+  max-width: none;
+}
+
+.photo-slider {
+  overflow: hidden;
+}
+
+.photo-slider ul {
+  padding-left: 0;
+}
+
+.photo-slider .caption,
+.photo-single .caption {
+  *padding: 0 10px 0 0;
+}
+
+.photo-slider .title__text {
+  line-height: 52px;
+}
+
+.photo-slider .sub-title {
+  line-height: 35px;
+}
+
+.photo-slider .word,
+.photo-single .word {
+  *display: inline;
+  *zoom: 1;
+  *background: #db2b36;
+}
+
+.photo-slider .word span,
+.photo-single .word span {
+  zoom: normal;
+}
+
+.photo-slider .title .word {
+  *padding: 0 6px 11px;
+}
+
+.photo-slider .description .word {
+  *padding: 0 6px 11px;
+}
+
+.rslides {
+  z-index: 1;
+}
+
+.photo-slider_full .slogan {
+  margin-left: 420px;
+}
+
+.photo-slider_full .rslides_tabs {
+  position: absolute;
+  text-align: right;
+  width: 1140px;
+  margin-right: -570px;
+}
+
+.photo-slider_full .rslides_tabs li {
+  display: inline-block;
+  *display: inline;
+  *z-index: 1;
+  float: none;
+}
+
+.photo-slider_full .caption-body {
+  width: 1140px;
+  margin-left: -570px;
+}
+
+.tour {
+  display: block;
+  padding: 0;
+}
+
+.tour a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid #FFFFFF;
+  outline: 1px solid #505050;
+}
+
+.tour.img-thumbnail {
+  display: inline-block;
+  box-shadow: none;
+  padding: 0;
+  *border: 1px solid #505050;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+.tour .title {
+  padding: 20px 0 0 0;
+  *height: 50px;
+}
+
+.tour .title,
+.tour .descr {
+  display: block;
+  width: 261px;
+  *width: 100%;
+}
+
+.tour img {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.error-page .search-control {
+  width: 200px;
+  height: 28px;
+  *width: 158px;
+  *height: 17px;
+}
+
+.error-page .search {
+  overflow: hidden;
+}
+
+.error-page .search .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bookmark-heading h2 {
+  *display: inline;
+  *zoom: 1;
+  *vertical-align: sub;
+}
+
+.page-title {
+  *z-index: ;;</i>'));
+}
+
+.page-title h1 {
+  *display: inline;
+  *zoom: 1;
+  /**padding-bottom: 10px;*/
+}
+
+.page-title .before {
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.page-title .paging {
+  right: 0;
+}
+
+.page-title .pagination > li > a {
+  *height: 55px;
+}
+
+.breadcrumb {
+  margin-left: 0;
+  min-height: 17px;
+}
+
+/*.breadcrumb > li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}*/
+
+.breadcrumb > li + li {
+  *background: url("img2.gif") no-repeat 0 1px;
+}
+
+.breadcrumb > li:first-child + li {
+  *background: url("img2.gif") no-repeat 0 1px;
+}
+
+.networking-links-toggle {
+  top: -2px;
+  *top: -5px;
+}
+
+.icon-networking {
+  width: 25px;
+  height: 24px;
+}
+
+.panel-row {
+  *zoom: 1;
+  margin: 0 0 0 -2%;
+}
+
+.collapse {
+  display: none;
+}
+
+.panel-heading h4 {
+  *display: inline;
+  *zoom: 1;
+  *vertical-align: sub;
+}
+
+.buttons {
+  zoom: 1;
+}
+
+.list-group-item {
+  *zoom: 1;
+}
+
+.list-group-item .description-files {
+  *float: left;
+}
+
+.related .infoblock-body,
+.infoblock-grey_search .infoblock-body,
+.infoblock-grey_person .infoblock-body,
+.infoblock-grey_promo .infoblock-body,
+.photo-album-box .infoblock-body {
+  background: url("img2.gif") repeat 0 0;
+}
+
+.related-slider .infoblock-body,
+.adjustable-client .headline {
+  background: url("img2.gif") repeat 0 0;
+}
+
+.download-fast .image img {
+  width: auto;
+}
+
+.related .infoblock-grey_adjustable .dropdown {
+  *display: inline;
+  *zoom: 1;
+}
+
+.fancybox-overlay,
+.overlay {
+  background: url("img2.gif") repeat 0 0;
+}
+
+.selected-oil .search .search-control {
+  height: 30px;
+  *height: auto;
+}
+
+.selected-oil .search .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.periodicals.panel-content .descript ul,
+.panel-corporate-media .text ul {
+  margin-left: 0;
+}
+
+.panel-corporate-media .dropdown-toggle .fa {
+  *position: absolute;
+  *top: 6px;
+  *right: 8px;
+}
+
+.panel-default .cell {
+  *display: inline;
+  *zoom: 1;
+}
+
+.archive.panel-content .fa,
+.panel-contact .text .fa,
+.panel-default .panel-heading h4 {
+  vertical-align: middle;
+}
+
+.panel-default.panel-corporate-media {
+  *position: static;
+}
+
+.panel-default.panel-corporate-media .panel-body {
+  *position: relative;
+}
+
+.panel-default.panel-corporate-media:hover {
+  *z-index: 11;
+  *position: relative;
+}
+
+.panel-corporate-media .dropdown-menu {
+  min-width: 0;
+}
+
+.panel-content-image .image {
+  margin: 0;
+}
+
+.panel-we-present .countries__group {
+  *margin-left: -1px;
+}
+
+.panel-we-present .country {
+  *padding: 0;
+  *height: 31px;
+}
+
+.panel-contact .list-contacts {
+  *zoom: 1;
+}
+
+.panel-we-present .country a {
+  *display: inline;
+  *zoom: 1;
+  *line-height: 1.4;
+  *padding: 0 10px;
+}
+
+.form .radio,
+.form .checkbox {
+  *zoom: 1;
+}
+
+.radio-custom + label:after,
+.radio-custom + label:before,
+.checkbox-custom + label:after,
+.checkbox-custom + label:before {
+  display: none;
+}
+
+.form .form-control {
+  *width: 97.5%;
+}
+
+.form-horizontal .form-group {
+  margin-left: -2%;
+  margin-right: 0;
+}
+
+.label-control__hint {
+  margin-left: -6px;
+}
+
+.jq-file {
+  *height: 18px;
+}
+
+.jq-file input {
+  filter: Alpha(Opacity=0);
+  font-size: 999px;
+  margin: 0;
+}
+
+.jq-file__browse {
+  *border-left: 1px solid #db2b36;
+}
+
+.select2 {
+  *height: 30px;
+}
+
+.select2-selection {
+  *height: 17px;
+}
+
+.select2 .selection,
+.select2-results {
+  display: block;
+}
+
+.select2-container {
+  *overflow: hidden;
+}
+
+.form .radio-inline,
+.form .checkbox-inline {
+  *float: none;
+}
+
+.radio .label-control,
+.checkbox .label-control,
+.radio-inline .label-control,
+.checkbox-inline .label-control {
+  *display: block;
+  *margin-left: 20px;
+}
+
+.radio-custom,
+.checkbox-custom {
+  top: -4px;
+  *top: -2px;
+}
+
+.captcha .field-input-captcha {
+  *width: 55px;
+}
+
+.captcha .label-control {
+  *line-height: 1.2;
+  *vertical-align: middle;
+}
+
+.captcha .icon-update {
+  *display: inline;
+  *zoom: 1;
+}
+
+.captcha-image,
+.captcha-controls {
+  *display: inline;
+  *zoom: 1;
+}
+
+.form .radio .label-control,
+.form .checkbox .label-control,
+.form .radio-inline .label-control,
+.form .checkbox-inline .label-control {
+  *line-height: 1.2;
+}
+
+.ui-widget-content {
+  *margin-top: 0;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+.ui-widget-content .day-with-single-event a,
+.ui-widget-content .day-with-multiple-events a {
+  filter: Alpha(Opacity=100);
+}
+
+.panel-filter,
+.filter .row:first-child,
+.filter .row:first-child .form-group:first-child {
+  *position: relative;
+  *z-index: 1;
+}
+
+.jq-selectbox__dropdown {
+  width: 100%;
+}
+
+.filter .jq-selectbox__dropdown {
+  *width: auto !important;
+}
+
+.filter .label-control {
+  *line-height: 1.2;
+  *margin-top: 2px;
+  max-width: none;
+}
+
+.filter .control-label {
+  padding-top: 0 !important;
+}
+
+.filter .control-label label {
+  margin: 0;
+}
+
+.filter .col-sm-offset-4.col-md-offset-4 {
+  margin-left: 35.33%;
+  *margin-left: 38.33%;
+}
+
+.filter .col-sm-offset-2 {
+  margin-left: 18%;
+}
+
+.filter .col-sm-offset-3 {
+  margin-left: 27%;
+}
+
+.filter .col-sm-offset-7 {
+  margin-left: 59.7%;
+}
+
+.filter .form-control {
+  *padding-left: 0;
+  *padding-right: 0;
+}
+
+.filter .search .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.filter .group-calendar {
+  *zoom: 1;
+}
+
+.filter .calendar-item + .calendar-item {
+  *margin-left: 13.8%;
+}
+
+.filter .calendar-item .icon-calendar {
+  left: auto !important;
+}
+
+.filter .form-group {
+  margin: 0 0 10px -2%;
+}
+
+.filter .jq-selectbox__select-text {
+  width: auto;
+}
+
+.filter .checkbox-custom {
+  *display: none;
+}
+
+.filter .more-information .icon-s-chevron-right {
+  *vertical-align: -1px;
+}
+
+.dropdown-multi-selection .dropdown-toggle {
+  padding-right: 30px;
+}
+
+.dropdown-multi-selection .checkbox input {
+  top: 0;
+  display: block;
+}
+
+.panel-person-detailed .image,
+.panel-person-detailed .descript {
+  *display: inline;
+  *zoom: 1;
+}
+
+.panel-person-detailed .image {
+  *margin-right: 25px;
+}
+
+.event {
+  *display: block;
+}
+
+.event .event__date,
+.event .event__description {
+  *display: inline;
+  *zoom: 1;
+  *vertical-align: middle;
+}
+
+.event .event__description {
+  width: 69%;
+}
+
+.popover.top>.arrow,
+.popover.bottom>.arrow {
+  *border: 0;
+  *width: 22px;
+  *height: 11px;
+  *background: url("img2.gif") no-repeat 0 -1px;
+}
+
+.popover.bottom>.arrow {
+  *background: url("img2.gif") no-repeat 0 0;
+}
+
+.infoblock-red .networking-icon-s {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  margin: 0;
+}
+
+.media-center-container .panel-content {
+  margin-top: 0;
+}
+
+.infoblock-red .icon-networking {
+  width: 21px;
+}
+
+#gasStationInfoWindowTemplate {
+  zoom: 1; /*style for IE*/
+}
+
+#gasStationInfoWindowTemplate .item-name,
+#gasStationInfoWindowTemplate .item-price {
+  *display: inline;
+  *zoom: 1;
+}
+
+.owl-prev {
+  border-top: 10px solid transparent;;
+  border-bottom: 10px solid transparent;;
+}
+
+.owl-next {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;;
+}
+
+.control-dynamics {
+  *display: inline;
+  *zoom: 1;
+}
+
+.containerDynamics .fa {
+  *vertical-align: middle;
+  *margin-right: 4px;
+  *font-size: 18px;
+}
+
+.list-charts .icon,
+.invertedButtons .icon {
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+.invertedButtons a:hover,
+.list-charts a:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+.invertedButtons a.selected,
+.list-charts a.selected {
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.group-controls {
+  *z-index: ;;</i>'));
+}
+
+.group-controls .after {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+.controls-gas-locator .input-gas-locator {
+  *padding: 0;
+}
+
+.panel-asset .description-cut,
+.panel-asset .description-full {
+  zoom: normal;
+  display: inline;
+}
+
+.caret-right {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.caret-right_b-r:after {
+  top: -8px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left-width: 7px;
+}
+
+.panel-heading.panel-content i {
+  top: -1px;
+}
+
+.bookmark-heading h2,
+.panel-heading.panel-content h4 {
+  margin-top: 0;
+}
+
+.map-finder,
+.map-finder__tab.selected {
+  background-color: #f1f4f5;
+}
+
+.contact-person {
+  *zoom: 1;
+}
+
+.panel-info-bunker-station .table-wrap {
+  overflow: hidden;
+}
+
+.container .infoblock-grey {
+  min-height: 280px;
+}
+
+.container .infoblock-grey_related {
+  min-height: 195px;
+}
+
+.container .periodicals .infoblock-grey {
+  min-height: 212px;
+}
+
+.container .download-fast .infoblock-grey {
+  min-height: 195px;
+}
+
+.infoblock-grey.adjustable-client .image,
+.infoblock-grey.adjustable-client .image {
+  max-height: 280px;
+}
+
+.infoblock-grey.adjustable-client_full {
+  min-height: 0;
+}
+
+.select2-results__option {
+  min-height: 17px;
+}
+
+.my-lukoil-container {
+  *margin: 0 -2%;
+  *zoom: 1;
+}
+
+.my-lukoil-cell {
+  *float: left;
+  *padding: 0;
+  *margin: 0 2%;
+  *width: 29.4%;
+}
+
+.my-lukoil-item--buttons {
+  *left: 0;
+  *right: 0;
+}
+
+.my-lukoil-item .button {
+  *padding-left: 0;
+  *padding-right: 0;
+}
+
+#footer {
+  min-width: 1200px;
+}
+
+#footer .row {
+  *margin: 0;
+}
+
+#footer .col-sm-6 {
+  *padding-right: 0;
+}
+
+#footer .social-links li {
+  text-align: center;
+  display: block;
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+#footer .social-links a {
+  text-align: center;
+}
+
+#footer .social-links .fa {
+  font-size: 24px;
+}
+
+#footer .dropdown-toggle {
+  position: relative;
+}
+
+#footer .dropdown-toggle .fa {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+
+#footer .search {
+  position: relative;
+}
+
+#footer .search .btn {
+  position: absolute;
+  right: 2px;
+  *right: -18px;
+  top: 0;
+}
+
+#footer .search-control {
+  color: #FFFFFF;
+  *width: 180px;
+  height: 29px;
+  *height: 20px;
+}
+
+#scroll-top .fa {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+
+/* Images
+==============================================================================*/
+.topbar .choose-country .icon-world-map {
+  background: url("img2.gif") no-repeat center top;
+  width: 165px;
+  height: 80px;
+}
+
+.global-menu .choose-country .icon-world-map {
+  background: url("img2.gif") no-repeat center top;
+  width: 35px;
+  height: 17px;
+  margin: 4px 0 -4px 0;
+}
+
+.ru .navbar .logo {
+  background: url("img2.gif") no-repeat 0 0;
+}
+
+.icon-networking.white,
+.index-page .communication-center .icon-networking {
+  width: 21px\0/ !important; /* IE 8-9 */
+  background: url("img2.gif") no-repeat center top;
+}
+
+.icon-activities-geological {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-activities-production {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-activities-refining {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-activities-petrochemicals {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-activities-power {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-activities-marketing {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-content-h-related {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-content-h-contacts {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-content-h-archive {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-content-h-intresting {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.icon-networking.red {
+  background: url("img2.gif") no-repeat center center;
+}
+
+.interactive-map-container .interactive-map-controls {
+	z-index: 1000;
+}

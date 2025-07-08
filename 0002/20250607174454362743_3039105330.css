@@ -1,0 +1,120 @@
+.font-body-1,.font-body-1 *{font-family:Unicredit,Arial,sans-serif;font-size:18px;line-height:22px;font-weight:400}
+.font-body-1 b,.font-body-1 strong{font-weight:700}
+.product-header{font-family:Unicredit,Arial,sans-serif;position:relative;background-color:#757575;z-index:0;overflow:hidden;background-size:cover;background-position:center center}
+.sm_product_intro .product-header{background-color:#eee}
+.product-header .heading-details p.font-body-1 a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px;text-decoration:none}
+.product-header .product-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(90deg,rgba(0,0,0,0.75) 8.4%,rgba(0,0,0,0.25) 91.51%)}
+.product-header .product-background{position:absolute;top:0;width:100%;z-index:0}
+.product-header.campaign .product-container{display:flex;flex-direction:column;width:100%;height:auto;padding:0 32px 48px}
+.product-header.simple .product-container{display:table;width:100%;height:auto;table-layout:fixed;padding:0 32px 48px}
+.product-header .heading{margin-top:54px;color:#fff;width:60%}
+.product-header .heading h2{font-size:72px;line-height:76px;font-weight:500;letter-spacing:-1px;margin:0 0 0 -64px;text-shadow:0 1px 2px rgba(0,0,0,0.2);opacity:0;transition:opacity .5s ease;color:#fff}
+.product-header .heading.active h2{opacity:1}
+.product-header .heading h2:before{display:inline-block;width:16px;height:40px;vertical-align:top;margin-top:20px;margin-right:16px;background-color:#f50057;content:' '}
+.product-header .heading p{font-size:48px;line-height:48px;font-weight:400;letter-spacing:-1px;text-shadow:0 1px 2px rgba(0,0,0,0.2);opacity:0;transition:opacity .6s ease .4s}
+.product-header .heading.active p{opacity:1}
+.product-header .title{font-size:24px;line-height:28px}
+.product-header .name{display:table-cell;text-align:right;vertical-align:middle}
+.product-header .name h2{font-size:48px;line-height:52px;font-weight:400;margin-bottom:16px}
+.product-header .image{display:table-cell;width:340px;text-align:center;vertical-align:middle;padding:0 16px}
+.product-header .image img{width:100%}
+.product-header .buttons{display:flex;gap:8px}
+.product-header.campaign .buttons{position:absolute;right:32px;bottom:90px}
+.product-header .buttons button{margin-bottom:12px}
+.product-header .buttons.product-description{margin-bottom:48px;position:static}
+.product-header .details{display:table-cell;text-align:left;vertical-align:middle}
+.product-header .details .interest{font-size:36px;line-height:40px;font-weight:500;margin-bottom:24px}
+.product-header .details .interest sup{font-size:28px}
+.product-header .product-container ul{padding:0;margin:0}
+.product-header .product-container ul li{list-style-type:none;padding:0;background:0;margin:0}
+.product-header ul li p{margin:8px 0}
+.product-header .details ul{margin-bottom:32px}
+.product-header .details ul li p:before{display:inline-block;font-family:'Material Icons';font-size:21px;line-height:20px;vertical-align:text-bottom;margin-right:8px;content:"\E5CA"}
+.product-header .details ul li p span{display:inline-block;width:calc(100% - 30px);vertical-align:top}
+.product-header .details ul li p span b{font-family:inherit}
+.product-header .heading-details{position:absolute;bottom:90px;color:#fff}
+.product-header .heading-details.product-description{position:static;margin:80px 0 40px;padding-right:320px;color:#fff}
+.product-header .heading-details h3.title{font-size:24px;line-height:28px;margin-bottom:16px;color:#fff}
+.product-header.campaign .heading-details h3.title{font-weight:900}
+.product-header .heading-details p.title{margin-bottom:16px}
+.product-header .heading-details ul li p{line-height:30px;margin:0}
+.product-header .heading-details ul li p:before{display:inline-block;font-family:'Material Icons';font-size:21px;line-height:20px;vertical-align:text-bottom;margin-right:8px;content:"\E5CA"}
+.scroll-down-arrow{position:relative;z-index:10;margin-bottom:20px;font-family:Unicredit,Arial,sans-serif;font-size:10px;font-weight:700;padding:4px}
+.scroll-down-arrow button.icon-arrow:focus-visible{outline:2px solid var(--color-button-primary);outline-offset:2px;border-radius:4px}
+.scroll-down-arrow>.container{min-height:69px}
+.scroll-down-arrow .icon-knob{display:inline-block;height:44px;padding:7px 30px;vertical-align:top}
+.scroll-down-arrow .icon-knob .scrolling-knob{position:relative;width:17px;height:30px;background-color:#00bcd5;border-radius:9px}
+.scroll-down-arrow .icon-knob .scrolling-knob .knob{position:absolute;top:4px;left:0;right:0;margin:0 auto;width:7px;height:7px;border-radius:50%;background-color:#fff;animation:knob-scrolling 1.5s ease-in-out infinite}
+@keyframes knob-scrolling{0,100%{top:4px}
+50%{top:calc(100% - 10px)}
+}
+.scroll-down-arrow .icon-arrow{margin:8px 30px 0 0;background-color:#262626;border:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:4px;vertical-align:top;position:relative;width:80px;height:65px;font-family:Unicredit,Arial,sans-serif !important;font-weight:700;line-height:13px;letter-spacing:1px;text-transform:uppercase;text-align:center;gap:8px}
+.scroll-down-arrow .icon-arrow:hover{background-color:var(--color-button-hover)}
+.scroll-down-arrow .icon-arrow svg{width:18px;height:18px;transform:rotate(180deg)}
+@keyframes arrow-scrolling{0,100%{top:0}
+50%{top:10px}
+}
+.scroll-down-arrow .title{display:inline-block;height:45px;cursor:pointer;vertical-align:top}
+.scroll-down-arrow .title h3{font-size:32px;line-height:36px;font-weight:400}
+.scroll-down-arrow .title span{font-size:32px;line-height:36px;font-weight:400}
+.scroll-down-arrow .title h4{font-size:14px;line-height:19px;font-weight:100;color:#aaa}
+.product-header .details .title{margin-bottom:16px}
+.loan-rate .row{margin-bottom:56px}
+.loan-rate h3{font-size:24px;margin-bottom:16px}
+.loan-rate p{font-size:16px;line-height:20px;margin-bottom:16px}
+.loan-rate .charts{text-align:center}
+.loan-rate .charts .chart-left{padding-right:32px}
+.loan-rate .charts .chart-right{padding-left:32px}
+.loan-rate .charts img{width:200px;margin-bottom:24px}
+.loan-rate .charts p{min-height:130px;text-align:left}
+.loan-rate .charts a{display:block;font-weight:500;margin-top:16px;color:#00bcd5;text-transform:uppercase}
+.loan-contact-form{margin-bottom:40px}
+.loan-contact-form hr{border-color:#cdcdcd}
+.loan-contact-form label{display:block;font-size:15px;line-height:19px;margin-bottom:8px;text-transform:uppercase}
+.loan-contact-form input{width:100%;font-size:20px;line-height:40px;border:1px solid #cdcdcd;border-radius:4px;padding:0 8px;margin-bottom:32px}
+.loan-contact-form .button{padding:0 32px}
+.loan-contact-form .button button{width:100%;font-size:16px;line-height:48px;border-radius:4px;letter-spacing:1px;background-color:#00bcd5;border:1px solid #00bcd5;color:#fff}
+@media(hover:hover){.loan-contact-form .button button:hover{background-color:#0097a7;border-color:#0097a7}
+}
+.scroll-down-arrow .diagonal{position:absolute;top:-17px;height:104px;transform:rotate(1.5deg);width:120%;margin-left:-10%;background-color:#fff}
+body.has-intro header .sub_header_content.container,body:not(.has-header).has-intro section>div>.parbase.section:first-child>div>div{padding-top:55px}
+@media(max-width:1199px){.product-header .heading{margin-top:24px}
+.product-header .heading h2:before{display:none}
+.product-header .name h2{font-size:36px;line-height:40px;font-weight:400;margin-bottom:8px;padding-bottom:0}
+.product-header .name .title{font-size:20px;line-height:24px}
+.product-header .image{width:280px}
+.product-header .details .interest{font-size:20px;line-height:24px}
+.product-header .details .interest sup{font-size:14px}
+.product-header .name .title{display:block;margin-bottom:16px}
+.product-header .details .title{display:none}
+.scroll-down-arrow .title h3{font-size:24px}
+.scroll-down-arrow .title span{font-size:24px}
+}
+@media(max-width:959px){.product-header .product-container{height:auto !important;min-height:0;padding:0 0 72px}
+.product-header .heading{width:100%}
+.product-header .heading h2{font-size:48px;line-height:52px;margin-left:-32px}
+.product-header .heading p{font-size:28px;line-height:32px}
+.product-header .heading-details{position:relative;bottom:auto;margin-top:180px}
+.product-header .heading-details.product-description{padding-right:0}
+.product-header .name{display:block;text-align:center;margin-top:64px}
+.product-header .image{display:block;width:auto;text-align:center}
+.product-header .image img{width:auto;max-width:100%;height:260px}
+.product-header .details{display:block;text-align:center;padding:0}
+.product-header .details ul li p span{display:inline;width:auto}
+.product-header .heading h2{font-size:48px;line-height:52px;margin-left:0;padding:0}
+.product-header .heading p{font-size:24px;line-height:28px;margin-left:32px}
+.product-header .name h2{font-size:30px;line-height:32px;font-weight:500}
+.product-header .name .title{font-size:20px;line-height:24px}
+.product-header .details .interest{font-size:20px;line-height:24px}
+.product-header .details .interest sup{font-size:14px}
+.product-header.campaign .buttons{position:relative;bottom:auto;right:auto;margin-top:32px}
+}
+@media(max-width:599px){.product-header .image img{height:200px}
+.product-header .buttons.product-description{margin-bottom:0}
+.scroll-down-arrow .icon-arrow{display:none}
+.scroll-down-arrow .title{display:block}
+.scroll-down-arrow .title h3{text-align:center;color:#00afd0}
+.scroll-down-arrow .title span{display:flex;justify-content:center;color:#00afd0}
+}
+@media(max-height:700px) and (orientation:landscape){.product-header .heading-details{position:static}
+}

@@ -1,0 +1,328 @@
+header{position:relative;width:100%;z-index:50}
+header .header-container{position:fixed;top:0;width:100%;background-color:#fff;overflow:visible !important;box-shadow:0 4px 6px -3px rgba(0,0,0,0.15)}
+header nav{display:inline-block;vertical-align:top}
+header nav.segments{padding-left:40px}
+header nav.segments ul{display:flex;gap:16px}
+header .header-bottom nav li a:hover{color:#007a91;text-decoration:underline}
+header .header-row.header-top{display:flex;padding:16px 0;color:#262626;border-bottom:1px solid #e5e5e5}
+header .header-row.header-top .left-element{width:50%}
+header .header-row{align-items:center;justify-content:space-between;position:relative;display:table;table-layout:fixed;width:100%;background-color:#fff}
+header .header-row>div{display:table-cell;vertical-align:middle}
+header .header-top{height:64px;padding:0;z-index:3}
+header .header-top .center-element{width:160px;padding-top:0}
+header .header-top nav a:hover{color:#333}
+header .header-top nav .selected a{font-weight:800;color:#333}
+header .header-top .dropdown a.dropdown-selected{padding:0 16px}
+header .header-bottom{height:81px;z-index:2;display:flex;align-items:start;border-bottom:1px solid #e5e5e5}
+header .header-bottom .header-group{display:flex;gap:16px;max-width:240px;border-left:2px solid #e5e5e5;padding-left:40px;margin-right:40px;height:100%}
+header .header-bottom>div{text-align:center}
+header .header-bottom .logo{position:relative;width:248px;border-bottom:1px solid rgba(0,0,0,0.15);border-right:0}
+header .header-bottom .logo a{position:absolute;top:0;bottom:0;right:0;left:0;display:flex;align-items:center;justify-content:center;padding:0 20px;height:80px}
+header .header-bottom .logo a img{width:100%}
+header .header-bottom .logo a img[src $= "svg"]{height:24px}
+header .header-bottom .logo a:focus-visible img[src $= "svg"],header .header-bottom .logo a:focus-visible img[src $= "png"]{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+header .header-bottom .logo a img[src $= "ru.svg"],header .header-bottom .logo a img[src $= "banja_luka.svg"],header .header-bottom .logo a img[src $= "sr.svg"]{height:28px}
+header .header-bottom .logo a img[src $= "private_banking.svg"],header .header-bottom .logo a img[src $= "leasing.svg"]{height:39px}
+header .header-bottom .nav{background-color:#FFF;color:#000;text-align:left;display:flex;flex-direction:column}
+header .header-bottom .nav nav{height:80px;padding:0 20px;overflow:hidden}
+header .header-bottom .nav nav a{line-height:80px}
+header .header-bottom nav ul{display:flex;gap:24px}
+header .header-bottom .nav nav li.separator{border-left:1px solid #fff;height:24px;margin:28px 0}
+header .header-bottom .nav nav li.collapsable-dropdown:hover{background-color:#FFF}
+header .header-bottom .nav nav li.selected a{color:var(--color-button-primary)}
+header .header-bottom .nav nav li a:hover{text-decoration:none}
+header .header-bottom .nav nav li.selected .header_arrow{position:absolute;bottom:27px;left:0;width:100%;height:3px;background-color:var(--color-button-primary)}
+header .header-bottom .login{flex:1;position:relative;background-color:#FFF;color:#000;transition:background-color .4s ease}
+header .header-bottom .login.opened{background-color:#fff}
+header .header-bottom .login.opened+.nav nav li.selected{background-color:inherit}
+header .header-bottom .login.opened+.nav nav li.selected .arrow{display:none}
+header .header-bottom .login nav{display:flex;flex-direction:column;height:100%;background:#FFF;text-transform:uppercase;user-select:none;cursor:pointer}
+header .header-bottom .login nav a:hover{background:#007a91;color:#FFF;text-transform:uppercase;justify-content:center}
+header .header-bottom .login nav:hover .ico-iw2duo-login .path1:before,header .header-bottom .login nav:hover .ico-iw2duo-login .path2:before{color:#FFF}
+header .header-bottom .login nav:hover .ico-iw2duo-login .path3:before{color:#007a91}
+header .header-bottom .login nav:hover .description{color:#FFF;line-height:16px}
+header .header-bottom .search-lens{display:flex;width:100%}
+header .header-bottom .login a,header .header-bottom .search-lens a{display:grid;grid-template-rows:auto 1fr;gap:8px;width:100%;height:100%;color:#000;text-decoration:none}
+header .header-bottom .login a:focus-visible,header .header-bottom .search-lens .open-search:focus-visible,header .header-bottom .search-lens .do-search:focus-visible{outline:2px solid var(--color-button-primary) !important;border-radius:8px}
+header .header-bottom .search-lens .close-search:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:8px !important;border-radius:1px}
+header .header-bottom .login.opened a{color:#FFF;background-color:#007a91}
+header .header-bottom .login.opened a .ico-iw2duo-login .path1:before,header .header-bottom .login.opened a .ico-iw2duo-login .path2:before{color:#FFF}
+header .header-bottom .login.opened a .ico-iw2duo-login .path3:before{color:#007a91}
+header .header-bottom .search-lens.opened a{color:#FFF;background-color:#007a91}
+header .header-bottom .search-lens.opened a .ico-iw2duo-cerca .path1:before,header .header-bottom .search-lens.opened a .ico-iw2duo-cerca .path2:before{color:#FFF}
+header .header-bottom .login .icon{display:inline-block;font-size:30px;align-self:center;line-height:30px;margin-right:10px;margin-top:9px;vertical-align:middle}
+header .header-bottom .login .icon span:before{transition:color .4s ease}
+header .header-bottom .login.opened .icon .path1:before{color:#333}
+header .header-bottom .login.opened .icon .path3:before{color:#FFF}
+header .header-bottom .login .description,header .header-bottom .search-lens .search-lens-label{display:inline-block;line-height:16px;text-align:center;vertical-align:middle;word-break:break-word;flex:0;align-self:baseline}
+header .header-bottom .login i{display:inline-block;margin-left:5px;vertical-align:middle;transform:rotate(0);transition:transform .3s ease;text-align:right}
+header .header-bottom .login.opened i{transform:rotate(180deg)}
+header .header-bottom .search-lens{flex:1;background-color:#FFF;color:#000}
+header .header-bottom .search-lens .search-lens-nav-container{flex:1;display:flex;justify-content:center}
+header .header-bottom .login .login-nav-container{background:#FFF;display:flex;justify-content:center;height:100%}
+header .header-bottom .login div:first-of-type{height:100%}
+header .header-bottom .search-lens nav:hover{background:#007a91;color:#FFF;text-transform:uppercase;justify-content:center}
+header .header-bottom .search-lens nav:hover .ico-iw2duo-cerca .path1:before,header .header-bottom .search-lens nav:hover .ico-iw2duo-cerca .path2:before{color:#FFF}
+header .header-bottom .search-lens nav:hover .search-lens-label{color:#FFF;line-height:16px}
+header .header-bottom .search-lens nav{display:flex;width:100%;flex-direction:column;background:#FFF;text-transform:uppercase;user-select:none;cursor:pointer}
+header .header-bottom .login .icon .path1:before,header .header-bottom .login .icon .path2:before{color:#000}
+header .header-bottom .login .icon .path3:before{color:#FFF}
+header .header-bottom .search-lens span.search-lens-label{font-family:'UniCredit';font-weight:600}
+header .header-bottom .search-lens a.open-search .icon{font-size:30px;margin-top:9px;align-self:center;transform:scaleX(-1)}
+header .header-bottom .search-lens .search-field{position:absolute;bottom:0;right:-200px;display:flex;width:0;height:80px;background-color:#FFF;overflow:hidden;transition:all .3s ease}
+header .header-bottom .search-lens.opened .search-field{right:0;top:81px;width:100%;justify-content:center;align-items:center}
+header .header-bottom .search-lens.opened .search-field hr{border:0;border-left:1px solid #909090;height:20px;width:0}
+header .header-bottom .search-lens.opened .search-field hr.hidden{display:none}
+header .header-bottom .search-lens.opened .search-field .input-search{border:1px solid #909090;border-right:0;width:700px;height:40px;color:#666;font-size:18px;padding:10px}
+header .header-bottom .search-lens.opened .search-field .input-search::placeholder{color:#666}
+header .header-bottom .search-lens.opened .search-field .do-search .icon{border:1px solid #909090;border-right:0;transform:scaleX(-1);height:40px;width:40px;font-size:30px;align-content:center}
+header .header-bottom .search-lens.opened .search-field .search-field-content a{background-color:#FFF;align-items:flex-start;height:40px;width:40px;padding:0}
+header .header-bottom .search-lens.opened .search-field .search-field-content a .ico-iw2duo-cerca .path1:before,header .header-bottom .search-lens.opened .search-field .search-field-content a .ico-iw2duo-cerca .path2:before{color:#000}
+header .header-bottom .search-lens.opened .search-field .reset-search-button .hidden{display:none}
+header .login-area .login-area-content ul.show li{opacity:1;border-bottom:1px solid #ccc;font-size:16px;font-weight:700;margin:0;padding:10px 0}
+header .header-bottom .search-lens.opened .search-field .reset-search-button img{height:40px;width:40px;border-bottom:1px solid #909090;border-top:1px solid #909090}
+header .header-bottom .search-lens .search-field>div{display:flex;align-items:center;justify-content:center;height:fit-content}
+header .header-bottom .search-lens .search-field .search-field-content:has(:focus-visible),header .header-bottom .nav nav a:not(.collapsable-link):focus-visible span{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+header .header-bottom .search-lens .search-field .close-button{width:80px}
+header .header-bottom .search-lens .search-field .close-search{background-color:#fff}
+header .header-bottom .search-lens .search-field .close-button+div{flex:1}
+header .header-bottom .search-lens .search-field .button{width:160px}
+header .header-bottom .search-lens .search-field a.close-search{display:flex;width:16px;height:16px;vertical-align:middle;align-items:center}
+header .header-bottom .search-lens .search-field a.close-search img{width:30px;height:30px}
+header .header-bottom .search-lens .search-field input{width:100%;height:45px;font-size:40px;line-height:44px;color:#fff;border-color:#fff;border-width:0 0 1px 0;border-radius:0;padding:0;background-color:transparent}
+header .header-bottom .search-lens .search-field .button{padding:0;border:0}
+header .header-bottom .search-lens .search-helper{display:none;position:absolute;top:145px;right:0;width:100%;max-height:320px;overflow-y:scroll;z-index:100}
+header .header-bottom .search-lens .search-helper.visible{display:block}
+.search-helper-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.6);z-index:40}
+.search-helper-overlay.visible{display:block}
+header .header-bottom .search-lens .search-helper .search-helper-words{background-color:#fff;text-align:left;padding:0 160px}
+header .header-bottom .search-lens .search-helper .search-helper-words ul li{padding:8px 0;cursor:pointer}
+header .header-bottom .search-lens .search-helper .search-helper-words ul li span{display:block;font-size:20px;font-weight:100;letter-spacing:1px;line-height:30px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+header .header-bottom .search-lens .search-helper .search-helper-words ul li.selected,header .header-bottom .search-lens .search-helper .search-helper-words ul li:hover span{color:#00bcd5}
+header .header-mobile{display:none;height:100%;z-index:2}
+header .header-mobile .login a{display:inline-block;width:80px;height:80px;background-color:#fff;text-align:center}
+header .header-mobile .login.opened a{background-color:#007a91;border-right:1px solid rgba(0,0,0,0.15)}
+header .header-mobile .login .icon{font-size:36px;line-height:80px}
+header .header-mobile .login .icon span:before{transition:color .4s ease}
+header .header-mobile .login:not(.opened) .icon .path1:before{color:#000}
+header .header-mobile .login:not(.opened) .icon .path2:before{color:#000}
+header .header-mobile .login:not(.opened) .icon .path3:before{color:#fff}
+header .header-mobile .login.opened .icon .path1:before{color:#fff}
+header .header-mobile .login.opened .icon .path3:before{color:#007a91}
+header .header-mobile .logo{display:inline-block;height:48px;display:flex;align-items:center;justify-content:center}
+header .header-mobile .logo:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+header .header-mobile .logo img{width:auto;height:24px}
+header .header-mobile .logo img[src $= "leasing.svg"],header .header-mobile .logo img[src $= "private_banking.svg"]{height:38px}
+header .header-mobile .logo img[src $= "logo_sr.svg"],header .header-mobile .logo img[src $= "logo_ru.svg"]{height:27px}
+header .login-area{position:relative;z-index:1}
+header .login-area .page-overlay,header .search-field .page-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:-1}
+header .search-field .page-overlay{top:145px}
+header .login-area.opened .page-overlay,header .search-field.opened .page-overlay{display:block}
+header .login-area .login-area-content{position:absolute;bottom:0;left:0;width:100%;max-width:none;padding:24px 0 0 283px;background-color:#fff;color:#333;-webkit-transform:translate3d(0,0,0);transition:bottom .4s ease}
+header .login-area .login-area-content .login-area-content-list{display:flex;justify-content:end}
+header .login-area .login-area-content .olb-menu-items{padding:0 15px;text-transform:uppercase}
+header .login-area .login-area-content .olb-menu-items .menuitem .description .login-label:hover{color:#007a91}
+header .login-area .login-area-content button.close-olbmenu{position:absolute;bottom:17px;right:43px;background-color:transparent;border:0;margin:0;padding:0;color:var(--color-button-primary);font-size:14px;font-weight:700;display:flex;justify-content:center;align-items:center;gap:4px}
+header .login-area .login-area-content button.close-olbmenu::before{display:inline-block;width:16px;height:16px;content:url("img2.gif")}
+header .header-bottom .search-lens .search-field a.close-search::before{display:inline-block;width:16px;height:16px;content:url("img2.gif")}
+header .login-area .login-area-content .close-olbmenu:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px;color:var(--color-button-hover)}
+header .login-area.opened .login-area-content{box-shadow:0 4px 6px -3px rgba(0,0,0,0.15)}
+header .login-area .login-area-content ul{float:left;width:270px}
+header .login-area .login-area-content ul .icon{color:#000}
+header .login-area .login-area-content ul li{float:none;margin:16px 0;opacity:0}
+header .login-area .login-area-content ul.show li{opacity:1;border-bottom:1px solid #ccc;font-size:16px;font-weight:700;margin:0;padding:10px 0}
+header .login-area .login-area-content ul.show li:nth-child(1){transition:opacity .4s ease 0}
+header .login-area .login-area-content ul.show li:nth-child(2){transition:opacity .4s ease .05s}
+header .login-area .login-area-content ul.show li:nth-child(3){transition:opacity .4s ease .1s}
+header .login-area .login-area-content ul.show li:nth-child(4){transition:opacity .4s ease .15s}
+header .login-area .login-area-content ul.show li:nth-child(5){transition:opacity .4s ease .2s}
+header .login-area .login-area-content ul.show li:nth-child(6){transition:opacity .4s ease .25s}
+header .login-area .login-area-content ul li a{display:table;font-family:Unicredit;color:#333}
+header .login-area .login-area-content ul li a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:-2px !important;border-radius:4px}
+header .login-area .login-area-content ul li a .icon{display:table-cell;font-size:32px;padding-right:8px;vertical-align:middle}
+header .login-area .login-area-content ul li a .icon span:before{color:#333}
+header .login-area .login-area-content ul li a .ico-iw2duo-internetbanking .path1:before,header .login-area .login-area-content ul li a .ico-iw2duo-carte .path2:before,header .login-area .login-area-content ul li a .ico-iw2duo-smartphone .path1:before,header .login-area .login-area-content ul li a .ico-iw2duo-Desktop .path1:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path1:before,header .login-area .login-area-content ul li a .ico-iw2duo-investimentbanking .path1:before{color:#000}
+header .login-area .login-area-content ul li a .ico-iw2duo-Desktop .path2:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path3:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path4:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path5:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path6:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path7:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path8:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path9:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path10:before,header .login-area .login-area-content ul li a .ico-iw2duo-imprese .path11:before,header .login-area .login-area-content ul li a .ico-iw2duo-investimentbanking .path2:before{color:#fff}
+header .login-area .login-area-content ul li a span.description{display:table-cell;min-width:200px;height:40px;margin-left:5px;padding:0 10px;border-radius:4px;vertical-align:middle}
+header .login-area .login-area-content ul li a span.description .login-label{display:block;font-size:15px;line-height:20px;font-weight:500;color:#000;letter-spacing:1px;text-transform:uppercase}
+header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover span.description .login-label,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover span.description .mode{color:#007a91}
+header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-imprese .path1:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-imprese .path2:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-internetbanking .path1:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-internetbanking .path2:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-carte .path1:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-carte .path2:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-investimentbanking .path1:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-investimentbanking .path3:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-Desktop .path1:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-Desktop .path3:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-smartphone .path1:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-smartphone .path2:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-smartphone .path3:before,header .login-area .login-area-content .login-area-content-list .olb-menu-items li a:hover .ico-iw2duo-smartphone .path4:before{color:#007a91}
+header .login-area .login-area-content ul li a span.description .mode{font-size:15px;font-weight:400;line-height:20px;color:#666;letter-spacing:1px}
+header .login-area .login-area-content .login-description{float:left;border-top:1px solid rgba(0,0,0,0.2);padding:15px 10px 0;margin:0;margin-top:20px;height:75px;overflow:hidden}
+header .login-area .login-area-content .login-description p{display:none;color:#333;font-size:14px;line-height:20px}
+header .login-area .login-area-content .login-description p.visible{display:block}
+header .login-area .login-area-content .row{display:flex;flex-direction:row-reverse;position:relative;top:-24px}
+header .login-area .login-area-content .row:nth-child(2){margin-left:-15px;margin-right:5px}
+header .login-area .login-area-content .article-box h2.title{font-size:15px;font-weight:400;line-height:20px;margin:14px 0 26px}
+header .login-area .login-area-content .article-box a{margin:0}
+header .login-area .login-area-content .article-box .text{padding-right:0}
+header .login-area .login-area-content .article-box .see-all{display:flex;justify-content:flex-end;padding-top:10px}
+header .login-area .login-area-content .article-box h2.title{font-size:15px;font-weight:400;line-height:20px;margin:14px 0 26px}
+header .login-area .login-area-content .article-box a{margin:0}
+header .login-area .login-area-content .article-box .text{padding-right:0}
+header .header-container .header-row.header-second-level{height:48px;padding-left:404px;border-bottom:1px solid rgba(0,0,0,0.15);z-index:0;background-color:#262626;display:flex;justify-content:space-around}
+header .header-container .header-row.header-second-level.centered{padding-left:0;text-align:center}
+header .header-second-level nav ul li{margin:0 24px}
+header .header-second-level nav ul li a{text-transform:inherit;font-weight:400;color:#FFF;padding:9px 0}
+header .header-second-level nav ul li a.active{font-weight:700;border-bottom:2px solid #FFF}
+header .left-element{text-align:left}
+.focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px;border-radius:4px !important}
+header .center-element{text-align:center}
+header .right-element{text-align:right}
+header .header-top .left-element .collapsable-element .collapsable-dropdown .collapsable-list li:hover a{background-color:transparent;color:#007a91}
+header .header-bottom .nav nav .collapsable-element li.collapsable-dropdown ul.collapsable-list a:focus-visible span{outline:none !important;border-radius:unset}
+header .header-container .header-top .right-element{display:flex;gap:16px;padding-right:40px}
+header .header-container .header-top .right-element .service_status_configuration a{display:flex;align-items:center;gap:6px;padding:0}
+header .header-container .header-top .right-element .service_status_configuration span:first-of-type{display:flex;margin:0;width:16px;height:16px}
+header .header-container .header-top .right-element .font-nav-link:hover{color:#262626}
+header .header-container .header-top .right-element .dropdown.opened a span{position:relative;color:#007a91}
+header .header-container .header-top .right-element .dropdown.opened a span:not(.service-status__availability)::after{content:"";position:absolute;width:100%;height:3px;bottom:-3px;left:0;background-color:#007a91}
+header .header-container .header-top .right-element .dropdown.opened .dropdown-list{display:flex;flex-direction:column;gap:8px}
+header .header-container .header-top .right-element .dropdown.opened .dropdown-list a{padding:8px;gap:16px;align-self:stretch;font-size:16px;font-weight:700;color:var(--color-text);text-transform:uppercase;text-align:center}
+header .header-container .header-top .right-element .dropdown.opened .dropdown-list a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:-5px !important;border-radius:8px}
+header .header-container .header-top .right-element .dropdown.opened .dropdown-list a:hover,header .header-container .header-top .right-element .dropdown.opened .dropdown-list a.selected{background-color:transparent;color:#007a91}
+header .header-second-level nav ul li a:focus-visible,header .header-container .header-top .right-element .dropdown-list a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px;border-radius:4px}
+header .header-container .header-top .right-element .dropdown a.dropdown-selected{padding:0;position:relative;display:flex;gap:8px}
+header .header-container .header-top .right-element nav:not(.service-status) .dropdown a.dropdown-selected::after{content:url("img2.gif");display:inline-block;width:1em;height:1em}
+header .header-container .header-top .right-element .dropdown a.dropdown-selected:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px;border-radius:4px !important}
+@media(max-width:1199px){header .login-area .login-area-content .article-box a{display:block;margin:0}
+header .login-area .login-area-content .article-box .image{width:53%;margin-bottom:16px}
+header .login-area .login-area-content .article-box .text{width:100%;padding:0}
+}
+@media(max-width:1199px){header .login-area .login-area-content .article-box a{display:block;margin:0}
+header .login-area .login-area-content .article-box .image{width:53%;margin-bottom:16px}
+header .login-area .login-area-content .article-box .text{width:100%;padding:0}
+}
+@media(max-width:959px){header .header-row.header-top,header .header-bottom{display:none}
+header .left-element,header .right-element{width:80px}
+header .header-mobile{display:table}
+header.login-opened .header-mobile .center-element,header.login-opened .header-mobile .right-element{border-bottom:1px solid rgba(0,0,0,0.15)}
+header .login-area .login-area-content .row{top:0}
+header .login-area .login-area-content .login-area-content-list{justify-content:normal}
+header .login-area .login-area-content{padding:8px 20px 20px 33px}
+header .login-area .login-area-content .close-olbmenu{display:none}
+header .login-area .login-area-content ul li a .icon{font-size:24px}
+header .second-level .header-apply-now button{padding:0;min-width:96px}
+}
+@media(max-width:759px){header .login-area-content .sm_financialarticles,header .login-area-content .sm_promo_section{display:none}
+}
+@media(max-width:599px){header .left-element,header .right-element{width:48px}
+header .header-mobile .login a{width:48px;height:48px}
+header .header-mobile .login a .icon{line-height:48px}
+header .header-mobile .logo img{height:16px}
+header .header-mobile .logo img[src $= "logo_sr.svg"],header .header-mobile .logo img[src $= "banja_luka.svg"],header .header-mobile .logo img[src $= "logo_ru.svg"]{height:19px}
+header .header-mobile .logo img[src *= "leasing"],header .header-mobile .logo img[src *= "private"]{height:32px}
+header .login-area .login-area-content{padding:8px 18px 20px 18px}
+}
+.header-container .header-row.header-top .font-nav-link i,.header-container .header-bottom .nav nav i{display:inline-block;font-size:20px;line-height:22px;vertical-align:middle}
+.dropdown{position:relative;text-align:left}
+.dropdown a.dropdown-selected{padding-left:16px;padding-right:16px;white-space:nowrap}
+.dropdown a.dropdown-selected .mobile{display:none}
+.dropdown a.dropdown-selected span{display:inline-block;line-height:30px;vertical-align:top}
+.header-container .header-row.header-top .font-nav-link,.header-container .header-row.header-top .font-nav-link span,.header-container .header-row.header-top .font-nav-link button{font-size:10px;line-height:22px;letter-spacing:1px;font-weight:700;text-transform:uppercase;color:inherit}
+.header-container .header-row.header-top .right-element .font-nav-link,.header-container .header-row.header-top .right-element .font-nav-link span{font-size:16px}
+.header-container .header-row.header-top .font-nav-link.em.selected,.header-container .header-row.header-top .font-nav-link.em.selected span{color:#fff}
+.dropdown .dropdown-list{position:absolute;left:-1px;display:none;min-width:100%;background-color:#fff;border:1px solid #ccc;box-shadow:0 4px 7px -3px #404040;z-index:2}
+.dropdown.dropdown-right .dropdown-list{left:auto;right:-1px}
+.dropdown .dropdown-list .block{border-top:1px solid #ccc;border-bottom:1px solid #ccc}
+.dropdown .dropdown-list a{padding:9px 16px;margin:0;line-height:26px;white-space:nowrap}
+.dropdown .dropdown-list a.selected{color:#333;background-color:#eee}
+@media(max-width:599px){.dropdown a.dropdown-selected .desktop{display:none}
+.dropdown a.dropdown-selected .mobile{display:block}
+}
+@media(max-width:599px){.dropdown a.dropdown-selected .desktop{display:none}
+.dropdown a.dropdown-selected .mobile{display:block}
+}
+header .header-container *,aside.hamburger *{box-sizing:border-box;font-family:'Unicredit';margin:0;padding:0;text-decoration:none;list-style-type:none}
+header .hamburger-menu{display:none;float:right}
+header .hamburger-menu a{display:inline-block;width:64px;color:#9e9e9e;text-align:center}
+header .hamburger-menu a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+header .hamburger-menu a i{line-height:48px}
+aside.hamburger{display:none;position:fixed;top:0;right:-100%;width:100%;height:100%;background-color:#333;color:#777;text-align:center;z-index:104;transition:right .5s ease}
+aside.hamburger.opened{right:0}
+aside.hamburger .header{position:relative;padding:0 15px;border-bottom:1px solid rgba(255,255,255,0.2)}
+aside.hamburger .header .logo{margin:20px 0}
+aside.hamburger .header a.close-menu{position:absolute;top:17px;right:21px;display:block;color:#fff}
+aside.hamburger .header a.close-menu:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+aside.hamburger .scrollable{height:calc(100% - 60px);padding:10px 15px;overflow-y:scroll}
+aside.hamburger section{border-bottom:1px solid rgba(255,255,255,0.2)}
+aside.hamburger section:last-child{border-bottom:0}
+aside.hamburger section.about-us div{font-size:24px;line-height:45px;font-weight:400;color:#fff;padding-top:16px}
+aside.hamburger section .H3{font-size:17px;line-height:30px;font-weight:800;letter-spacing:1px;color:#ccc;padding:10px 0;text-transform:uppercase}
+aside.hamburger section a{display:block;font-size:14px;line-height:23px;font-weight:800;color:#ccc;letter-spacing:1px;text-transform:uppercase;padding:8px 0}
+aside.hamburger section a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+aside.hamburger section .hamburger-dropdown{position:relative;margin:0 -15px;padding:8px 0;background-color:transparent;transition:background-color .5s ease}
+aside.hamburger section.settings .hamburger-dropdown:has(:focus-visible),aside.hamburger section.offering .hamburger-dropdown:has(:focus-visible),aside.hamburger section .hamburger-dropdown.opened:has(:focus-visible),aside.hamburger section.settings a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:-6px !important;border-radius:8px}
+aside.hamburger section .hamburger-dropdown.opened{background-color:#000}
+aside.hamburger section .hamburger-dropdown .H3{color:#ccc;padding:0;cursor:pointer}
+aside.hamburger section .hamburger-dropdown.opened .H3.selected{border-left:6px solid red;border-right:6px solid transparent}
+aside.hamburger section .hamburger-dropdown i{position:absolute;top:11px;right:19px;transform:rotate(0);transition:transform .3s ease}
+aside.hamburger section .hamburger-dropdown.opened .H3,aside.hamburger section .hamburger-dropdown.opened i{color:#fff}
+aside.hamburger section .hamburger-dropdown.opened i{transform:rotate(180deg)}
+aside.hamburger section .hamburger-dropdown ul{display:none}
+aside.hamburger section .hamburger-dropdown ul li{border-left:6px solid transparent;border-right:6px solid transparent}
+aside.hamburger section .hamburger-dropdown ul li.active{border-left-color:red}
+aside.hamburger section .hamburger-dropdown ul li a{display:block;color:#fff}
+aside.hamburger section.settings .hamburger-dropdown .H3,aside.hamburger section.settings .hamburger-dropdown ul li a,aside.hamburger section.status .hamburger-dropdown .H3{font-size:14px}
+aside.hamburger section.login{border-bottom:0}
+aside.hamburger section.login:has(:focus-visible){outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+aside.hamburger section.search{color:#000;background-color:#bdbdbd;margin:0 -15px 10px;padding:0 15px;border-bottom:0}
+aside.hamburger section.search img{display:inline-block;margin-right:10px;vertical-align:middle}
+aside.hamburger section.search input{width:calc(100% - 40px);font-size:24px;line-height:45px;color:#000;background-color:#bdbdbd;border:0;margin:5px 0;padding-right:31px;text-align:center;vertical-align:middle}
+aside.hamburger section.search input::-webkit-input-placeholder{font-size:24px;font-weight:100;letter-spacing:1px;text-align:center;color:rgba(0,0,0,0.6)}
+aside.hamburger section.search input:-moz-placeholder{font-size:24px;font-weight:100;letter-spacing:1px;text-align:center;color:rgba(0,0,0,0.6);opacity:1}
+aside.hamburger section.search input::-moz-placeholder{font-size:24px;font-weight:100;letter-spacing:1px;text-align:center;color:rgba(0,0,0,0.6);opacity:1}
+aside.hamburger section.search input:-ms-input-placeholder{font-size:24px;font-weight:100;letter-spacing:1px;text-align:center;color:rgba(0,0,0,0.6)}
+aside.hamburger section.search input::-ms-input-placeholder{font-size:24px;font-weight:100;letter-spacing:1px;text-align:center;color:rgba(0,0,0,0.6)}
+aside.hamburger section.about-us a{font-size:18px;line-height:30px}
+@media(max-width:959px){header .hamburger-menu{display:block}
+aside.hamburger{display:block}
+}
+@media(max-width:599px){header .hamburger-menu a{width:48px}
+}
+aside.hamburger section{min-height:0;width:auto}
+aside.hamburger section ul li{background-image:none;list-style-type:none;padding-left:0 !important}
+.sm_header_head_bar{height:100%}
+header .login-area .login-area-content .campaign-space{padding-top:12px}
+header .login-area .login-area-content .campaign{position:relative;overflow:hidden;height:100%;min-height:170px;color:#fff;padding:24px;z-index:0}
+header .login-area .login-area-content .campaign img{position:absolute;top:0;left:0;width:100%;color:#333;z-index:-1}
+header .login-area .login-area-content .campaign .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:-1}
+header .login-area .login-area-content .campaign p{font-size:15px;line-height:19px;font-weight:400}
+header .login-area .login-area-content .campaign h2{font-size:36px;line-height:40px;font-weight:400;margin-bottom:8px}
+header .login-area .login-area-content .campaign h3{font-size:20px;line-height:22px;font-weight:400}
+header .login-area .login-area-content .campaign button{position:absolute;bottom:24px;right:24px;border-style:solid;text-transform:uppercase;font-weight:500}
+header .login-area .login-area-content .campaign.borrowing button{background-color:#f50057;border-color:#f50057}
+header .login-area .login-area-content .campaign.borrowing button:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+header .login-area .login-area-content .campaign.borrowing button:hover{background-color:#c51162;border-color:#c51162}
+header .login-area .login-area-content .campaign.banking button{background-color:#3d5afe;border-color:#3d5afe}
+header .login-area .login-area-content .campaign.banking button:hover{background-color:#303f9f;border-color:#303f9f}
+header .login-area .login-area-content .campaign.saving button{background-color:#00e676;border-color:#00e676}
+header .login-area .login-area-content .campaign.saving button:hover{background-color:#00c853;border-color:#00c853}
+header .login-area .login-area-content .campaign.insurance button{background-color:#00acc1;border-color:#00acc1}
+header .login-area .login-area-content .campaign.insurance button:hover{background-color:#0097a7;border-color:#0097a7}
+header .login-area .login-area-content .campaign.digital button{background-color:#424242;border-color:#424242}
+header .login-area .login-area-content .campaign.digital button:hover{background-color:#000;border-color:#000}
+header .login-area .login-area-content .campaign h2,header .login-area .login-area-content .campaign h3{color:#fff}
+header .sm_promosection,header .sm_olb_switcher{height:100%}
+.dropdown.em-dropdown.active .dropdown-selected .em{background-color:rgba(0,0,0,0.5);color:#e5e5e5;border-radius:4px;padding:0 8px 0 16px}
+.dropdown.em-dropdown.active .dropdown-selected .em span{color:#e5e5e5}
+.dropdown.em-dropdown.active .dropdown-list{left:16px}
+.dropdown.em-dropdown{padding:0}
+.dropdown .dropdown-list .dropdown-group.font-nav-link{display:block;font-weight:100;color:#999;padding:9px 16px;margin:0;white-space:nowrap;text-transform:uppercase}
+.dropdown .dropdown-list .dropdown-group.font-nav-link:hover{color:#999}
+.dropdown .dropdown-list .block{border-top:1px solid rgba(0,0,0,0.1);width:100%;margin:0 auto}
+.dropdown .dropdown-list a:hover{background-color:#eee}
+header .header-top nav li:has(div.em.selected){background-color:#0d5870 !important;border:1px solid #0d5870}
+header .header-top .left-element nav li:not(.collapsable-hidden){padding:0 11px;height:32px;border-radius:3px;border:1px solid #262626;color:#262626}
+header .header-top .left-element nav li:not(.collapsable-hidden):hover{background-color:#f5f5f5;color:#666;border-color:#666}
+header .header-top .left-element nav li:not(.collapsable-hidden):active{background-color:#fff;color:#244858;border:1.4px solid #244858}
+header .header-top .left-element nav li:not(.collapsable-hidden) div{height:100%;text-align:center;display:flex;align-items:center}
+header .header-top .left-element nav li.collapsable-dropdown span{width:fit-content}
+header .header-top .left-element nav li.collapsable-dropdown button{border:0;background-color:transparent;color:inherit;height:100%;margin:0;text-align:center;display:flex;align-items:center;gap:8px}
+header .header-top .collapsable-element .collapsable-dropdown .collapsable-list li{border:0;border-radius:0;display:inline;height:auto;padding:0}
+header .header-row.header-bottom .collapsable-element .collapsable-dropdown .collapsable-list a{background-color:#FFF;font-size:16px}
+header .header-row.header-bottom .collapsable-element .collapsable-dropdown .collapsable-list .header_arrow{display:none}
+header .header-row.header-bottom .collapsable-element .collapsable-dropdown .collapsable-list a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:-5px !important;border-radius:8px}
+header .header-row.header-bottom .collapsable-element .collapsable-dropdown .collapsable-list li:hover a{background-color:#FFF;text-decoration:none}
+header .header-row.header-bottom .collapsable-element .collapsable-dropdown .collapsable-link{line-height:32px;margin:24px 10px}
+header .header-row.header-bottom .collapsable-element .collapsable-dropdown .collapsable-link:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}

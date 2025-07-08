@@ -1,0 +1,41 @@
+.empty-component{height:100px}
+.promotion-strip .container .strip{display:flex;justify-content:center;align-items:center;min-height:136px;border-radius:9px;border:1px solid #cdcdcd;box-shadow:0 0 5px rgba(0,0,0,0.13);padding-left:40px;padding-right:40px;margin-left:0;margin-right:0}
+.promotion-strip .container .strip .section-title{padding:0;position:relative}
+.promotion-strip .container .strip .section-title .strip-icon{height:48px;width:48px;padding:5px 5px 7px;font-size:48px;text-align:center;position:absolute;top:50%;transform:translate(0,-50%)}
+.promotion-strip .container .strip .section-title .first-line{font-size:18px;line-height:22px;margin-top:39px;margin-left:72px}
+.promotion-strip .container .strip .section-title .second-line{font-size:36px;line-height:40px;margin-bottom:39px;margin-left:92px}
+.promotion-strip .container .strip .section-benefits{padding:0;display:flex;justify-content:center;align-items:center}
+.promotion-strip .container .strip .section-benefits .benefits-list{padding:0}
+.promotion-strip .container .strip .section-benefits .benefits-list ul{margin-top:23px;margin-bottom:27px}
+.promotion-strip .container .strip .section-benefits .benefits-list ul li{margin:0;padding:0;background:0}
+.promotion-strip .container .strip .section-benefits .benefits-list ul li p{margin:6px 0 0 0}
+.promotion-strip .container .strip .section-benefits .benefits-list ul li p span{font-size:16px;text-align:center;color:#333}
+.promotion-strip .container .strip .section-benefits .benefits-list ul li p:before{display:inline-block;font-family:'Material Icons';font-size:24px;line-height:24px;vertical-align:middle;margin-right:7px;content:"\E5CA";color:#000}
+.promotion-strip .container .strip .section-benefits .apply-button{padding:0}
+.promotion-strip .container .strip .section-benefits .apply-button .row{margin:0;float:right}
+.promotion-strip .container .strip .section-benefits .apply-button .row .button{padding:0}
+@media(max-width:799px){.promotion-strip .container{margin-top:34px;margin-bottom:34px}
+.promotion-strip .container .strip{padding:16px;display:block}
+.promotion-strip .container .strip .section-title{padding-bottom:10px}
+.promotion-strip .container .strip .section-title .full-title{width:max-content;margin-left:auto;margin-right:auto}
+.promotion-strip .container .strip .section-title .full-title .first-line{margin-top:30px;margin-left:52px;max-width:380px}
+.promotion-strip .container .strip .section-title .full-title .second-line{margin-left:72px;max-width:360px}
+.promotion-strip .container .strip .section-benefits{display:block}
+.promotion-strip .container .strip .section-benefits .benefits-list{margin-bottom:20px}
+.promotion-strip .container .strip .section-benefits .benefits-list ul{margin:0 auto;width:fit-content}
+.promotion-strip .container .strip .section-benefits .benefits-list ul li{text-align:left}
+.promotion-strip .container .strip .section-benefits .apply-button{text-align:center}
+.promotion-strip .container .strip .section-benefits .apply-button .row{float:none}
+}
+@media(max-width:499px){.promotion-strip .container .strip .section-title .full-title .first-line{max-width:270px}
+.promotion-strip .container .strip .section-title .full-title .second-line{max-width:250px}
+}
+@media(max-width:399px){.promotion-strip .container .strip .section-title .full-title .first-line{max-width:250px}
+.promotion-strip .container .strip .section-title .full-title .second-line{max-width:230px}
+}
+@media(max-width:369px){.promotion-strip .container .strip .section-title .full-title .first-line{max-width:220px}
+.promotion-strip .container .strip .section-title .full-title .second-line{max-width:200px}
+}
+@media(max-width:320px){.promotion-strip .container .strip .section-title .full-title .first-line{max-width:200px}
+.promotion-strip .container .strip .section-title .full-title .second-line{max-width:180px}
+}

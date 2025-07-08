@@ -1,0 +1,48 @@
+.sm_accordion-list{margin:40px 0;gap:16px}
+.sm_accordion .accordion-list .item{border:2px solid var(--color-accordion-border);border-radius:8px;margin-bottom:16px;overflow:hidden}
+.accordion-list .item{border:2px solid var(--color-accordion-border);border-radius:8px;margin-bottom:16px;overflow:hidden}
+.sm_wrapper .sm_accordion:first-of-type{margin-top:40px}
+.sm_wrapper .sm_accordion:last-of-type{margin-bottom:40px}
+.accordion-list .item .accordion-header{position:relative;display:flex;margin:0;padding:16px;background-color:#fff;cursor:pointer;transition:background-color .4s ease,color .4s ease}
+.accordion-list .item:has(:focus-visible),.accordion-list .item .accordion-header button:focus-visible .arrow-accordion span,.accordion-body a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px;border-radius:4px}
+.accordion-focus{outline:2px solid var(--color-button-primary);outline-offset:2px}
+.accordion-list .item .active.accordion-header{background-color:#fff}
+.accordion-list .item .accordion-header:after{top:calc(100% - 15px);left:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(255,255,255,0);border-top-color:#fff;border-width:15px;margin-left:-15px;transition:top .4s ease,border-color .4s ease,border-top-color .4s ease}
+.accordion-list .item .active.accordion-header{color:var(--color-button-primary)}
+.accordion-list .item .accordion-header .arrow-accordion{color:var(--color-sidemenu-background)}
+.accordion-list .item .accordion-header .arrow-accordion span{vertical-align:middle;display:block;width:fit-content;transform:rotate(0);transition:transform .4s ease}
+.accordion-list .item .active.accordion-header .arrow-accordion span{transform:rotate(-180deg)}
+.accordion-list .item .accordion-header .text{text-transform:none}
+.accordion-list .item .accordion-header .text span{vertical-align:middle;text-transform:uppercase}
+.accordion-list .item .accordion-body.hidden{display:none}
+.accordion-list .item .accordion-body h3{margin-bottom:16px}
+.accordion-list .item .accordion-body p{font-size:16px;margin:0 0 16px}
+.accordion-list .item .accordion-body table p{font-size:14px}
+.accordion-list .item .accordion-body p:last-child{margin:0}
+.accordion-list .item .font-title-4{font-family:Unicredit;font-size:20px;line-height:24px;font-weight:500}
+.accordion-list a:not(.button.btn-link),.accordion-list a:not(.accordion-link),.accordion-list a:not(.accordion-link):hover{color:var(--color-button-hover)}
+.accordion-list .js-to_expand[aria-hidden=true],.accordion-list .js-to_expand[data-hidden=true]{display:none}
+.accordion-list .expandmore__button[aria-expanded=false]:before,.accordion-list .expandmore__button[data-expanded=false]:before{speak:none}
+.accordion-list .expandmore__button[aria-expanded=true]:before,.accordion-list .expandmore__button[data-expanded=true]:before{speak:none}
+.accordion-list .expandmore__button,.accordion-list .animated-expandmore__button{display:flex;align-items:center;justify-content:space-between;background:0;color:inherit;cursor:pointer;border:0;font-weight:bold;text-align:left;width:100%;padding:0}
+.accordion-list .animated-expandmore__to_expand{display:block;overflow:hidden;opacity:1;-webkit-transition:height .3s linear,padding-top .3s linear,padding-bottom .3s linear,border-top-width .3s linear,border-top-width .3s linear;transition:height .3s linear,padding-top .3s linear,padding-bottom .3s linear,border-top-width .3s linear,border-top-width .3s linear;visibility:visible;transition-delay:0;padding:5px 16px 16px 16px;background-color:var(--color-white)}
+.accordion-list .animated-expandmore__to_expand ul{list-style:none;padding-left:0;margin-bottom:.2em}
+.accordion-list [data-hidden=true].animated-expandmore__to_expand{display:block;max-height:0;opacity:0;visibility:hidden;transition-delay:1s,0,0;padding:0}
+.accordion-list .accordion-link:not(span){color:var(--color-button-primary);font-weight:bold;font-size:15px;text-transform:uppercase}
+.accordion-list .accordion-link span{color:var(--color-button-primary);margin-left:5px;font-size:14px}
+@media(max-width:599px){.sm_accordion-list{margin:20px 0}
+.sm_wrapper .sm_accordion:first-of-type{margin-top:20px}
+.sm_wrapper .sm_accordion:last-of-type{margin-bottom:20px}
+.accordion-list .item .accordion-header{padding:16px}
+.accordion-list .item .accordion-body{padding-left:16px;padding-right:16px}
+}
+.flp-accordion .container{margin:0;padding:0;max-width:100%}
+.ucr-flexible-content-parsys .accordion-list .item .font-title-4{font-family:Unicredit;font-size:18px;line-height:24px;font-weight:400;letter-spacing:.5px;color:var(--color-text)}
+.ucr-flexible-content-parsys .accordion-list .item .accordion-body ol{counter-reset:item;padding-left:20px}
+.ucr-flexible-content-parsys .accordion-list .item .accordion-body p,.ucr-flexible-content-parsys .accordion-list .item .accordion-body ul>li,.ucr-flexible-content-parsys .accordion-list .item .accordion-body ol>li{font-size:16px;font-family:Unicredit,Arial;line-height:26px;font-weight:400;color:var(--color-sidemenu-text);list-style-type:none}
+.ucr-flexible-content-parsys .accordion-list .item .accordion-body p,.ucr-flexible-content-parsys .accordion-list .item .accordion-body ul li:last-child,.ucr-flexible-content-parsys .accordion-list .item .accordion-body ol>li:last-child{margin:0 0 16px}
+.ucr-flexible-content-parsys .accordion-list .item .accordion-body ul>li{background:url(img2.gif) no-repeat 0 .5em transparent;padding-left:20px;vertical-align:middle}
+.ucr-flexible-content-parsys .accordion-list .item .accordion-body ol>li:before{content:counter(item) ". ";counter-increment:item;color:#e00024;margin-left:-20px;margin-right:3px}
+.ucr-flexible-content-parsys .accordion-list .item .accordion-body p:last-child,.ucr-flexible-content-parsys .accordion-list .item .accordion-body ul:last-child>li:last-child,.ucr-flexible-content-parsys .accordion-list .item .accordion-body ol:last-child>li:last-child{margin-bottom:0}
+.ucr-flexible-content-parsys .accordion-list .item .button{margin:0;box-sizing:border-box}
+.ucr-flexible-content-parsys .accordion-list .animated-expandmore__button{outline:0}

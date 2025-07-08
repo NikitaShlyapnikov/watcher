@@ -1,0 +1,75 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: Roboto;
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url("img2.gif") format("woff2"),
+    url("img2.gif") format("woff");
+  font-display: swap;
+
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: Roboto;
+  src:
+    local("Roboto Medium"),
+    local("Roboto-Medium"),
+    url("img2.gif") format("woff2"),
+    url("img2.gif") format("woff");
+  font-display: swap;
+
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* latin-ext */
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: Roboto-Ext;
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url("img2.gif") format("woff2");
+  font-display: swap;
+
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* latin-ext */
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: Roboto-Ext;
+  src:
+    local("Roboto Medium"),
+    local("Roboto-Medium"),
+    url("img2.gif") format("woff2");
+  font-display: swap;
+
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+.image-fadeout {
+  opacity: 0;
+}
+
+.fadein {
+  animation: fade-in-from-none 0.3s ease-out;
+}
+
+@keyframes fade-in-from-none {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

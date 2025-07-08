@@ -1,0 +1,61 @@
+div#goals_slide_thumbs{margin:0 auto;display:table}
+div#goals_slide_thumbs{margin-top:17px !important}
+div#goals_slide_thumbs div{height:80px;line-height:80px;float:left;display:block;text-align:center;cursor:pointer;position:relative}
+div#goals_slide_thumbs div img{vertical-align:middle;line-height:80px}
+div#goals_slide_thumbs div span.thumbnail_text{text-align:center;width:130px;height:20px !important;line-height:16px !important;position:absolute !important;top:-30px;display:none;color:#ffa900 !important;font-size:12px;left:50%;margin-left:-65px}
+.goals_content{width:100%;height:auto !important;position:relative;bottom:6%;margin-top:0;text-align:center;font-size:18px;display:block;z-index:5}
+.goals_content h2{font-size:35px;font-family:Arial,sans-serif;font-weight:bold}
+div.goals_slide_thumbnails_container{display:none;position:absolute;top:370px;height:130px;width:100%;background:rgba(7,7,9,0.5);z-index:20}
+section #goals{position:relative;width:100%;display:block;padding-bottom:20px;margin:0;padding-top:40px;margin-top:0}
+section #goals{padding-bottom:0;padding-top:0;min-height:270px}
+section #goals div.goals_text{height:auto;margin-top:30px;text-align:left}
+section #goals div.goals_text p,section #goals header.goals_text p{font-size:16px}
+.goals_menu a{display:inline-block;width:136px;height:136px;position:relative;margin:12px;text-decoration:none;color:#fff;text-transform:uppercase}
+.goals_menu a:hover{color:#fff}
+.goals_menu a:focus-visible{outline:2px solid var(--color-button-primary) !important;outline-offset:2px;border-radius:4px}
+.goals_menu a img{display:none}
+.goals_menu a span{display:block;height:130px;width:130px;border-radius:50%;border:2px solid #fff;background-size:auto 100%;background-position:center center}
+.goals_menu a span.layGoal{position:absolute;top:0;left:0;opacity:1;padding:0 10px;width:110px;display:flex;align-items:center;justify-content:center}
+.layGoal u{display:inline-block;text-decoration:none;line-height:20px;font-size:18px;font-weight:500;color:var(--color-white)}
+div#goals_slide_thumbs div.active span.thumbnail_text{display:none}
+div.goals_slide_thumbnails_container{height:0;top:auto;bottom:0;display:block;overflow:hidden}
+div#goals_slide_thumbs div.active img{border:solid 4px #fff}
+div#goals_slide_thumbs div.active img{vertical-align:middle;margin-top:0}
+div#goals_slide_thumbs div.active img{vertical-align:middle;border:solid 4px #fff;margin-top:-4px}
+.goals_menu a:hover .layGoal{opacity:0;-webkit-transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-ms-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+@media only screen and (max-width:599px){section #goals div.goals_text,section #goals header.goals_text{text-align:center}
+section #goals div.goals_text h1,section #goals header.goals_text h2{margin-left:auto}
+section #goals div.goals_text p,section #goals header.goals_text p{margin-left:auto;line-height:14px}
+}
+.goals_menu span{-webkit-transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-ms-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.goals_menu a.lessOpacity span.layGoal,.goals_menu a.lessOpacity span,.goals_menu a.lessOpacity .layGoal{opacity:.2}
+.goals_menu a:hover .layGoal{opacity:1}
+.goals_menu>a span{background:#e01e25}
+.goals_menu>a+a span{background:#dd1860}
+.goals_menu>a+a+a span{background:#007a91}
+.goals_menu>a+a+a+a span{background:#262626}
+.goals_menu>a+a+a+a+a span{background:#008574}
+.goals_menu>a+a+a+a+a+a span{background:#3d1fab}
+.goals_menu a span{background-size:cover !important}
+#goals>.container,#goals>.container>.row,#goals>.container>.row>.goals-wrapper{height:100%}
+.goals-wrapper{display:flex;flex-direction:column}
+.goals_text{flex:initial}
+.goals_container{flex:1;display:flex;align-items:center;justify-content:center}
+@media only screen and (max-width:360px){.goals_menu a span.layGoal u{margin:0 !important;line-height:14px;font-size:14px}
+}
+@media only screen and (max-height:650px) and (max-width:480px) and (orientation:portrait),only screen and (max-height:500px) and (max-width:1000px) and (orientation:portrait){.goals_menu a{width:100%;clear:both;margin:0}
+}
+@media only screen and (max-height:650px) and (max-width:480px) and (orientation:landscape),only screen and (max-height:500px) and (max-width:1000px) and (orientation:landscape){.goals_menu a{width:49.6%;clear:inherit;margin:0}
+.goals_menu a:not(:first-child):not(:nth-child(2)){margin-top:1.8vh}
+}
+@media only screen and (max-height:320px){.goals_menu a:not(:first-child):not(:nth-child(2)){margin-top:0}
+}
+@media only screen and (max-height:650px) and (max-width:480px),only screen and (max-height:500px) and (max-width:1000px){section #goals div.goals_text p,section #goals header.goals_text p{display:none}
+.goals_menu a span.layGoal{color:#222;padding:0 10px;float:none;width:auto;height:40px;margin-left:55px;border:0;position:relative;text-align:left;background:rgba(51,51,51,0);float:none;display:table-cell;vertical-align:middle}
+.goals_menu a span.layGoal{background:none repeat scroll 0 0 rgba(0,0,0,0) !important}
+.goals_menu a:hover .layGoal{opacity:1}
+.goals_menu a span{float:left;height:40px;width:40px}
+.goals_menu a{display:table-cell;height:50px;position:relative;text-decoration:none;color:#fff;text-transform:uppercase;float:left}
+.goals_content{width:100%;height:auto !important;position:relative;bottom:0 !important;margin-top:0;text-align:center;font-size:18px;display:block;z-index:5}
+.layGoal u{line-height:14px;font-size:14px;color:var(--color-button-primary)}
+}

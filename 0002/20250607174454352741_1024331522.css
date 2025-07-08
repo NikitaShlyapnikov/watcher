@@ -1,0 +1,137 @@
+header{position:relative;width:100%;z-index:50}
+header .header-container{position:fixed;top:0;width:100%;background-color:#fff;overflow:visible !important;box-shadow:0 4px 6px -3px rgba(0,0,0,0.15)}
+header nav{display:inline-block;vertical-align:top}
+header .header-top{height:64px;padding:0;z-index:3}
+header .header-top .center-element{width:160px;padding-top:0}
+header .header-top nav a:hover{color:#262626}
+header .header-top nav .em.selected a.font-nav-link,header .header-top nav .em.selected a.font-nav-link:hover,header .header-top nav .em.selected a.font-nav-link:focus,header .header-top nav .em.selected a.font-nav-link:active{color:#fff}
+header .header-top nav .collapsable-list .em.selected a.font-nav-link{color:#007a91}
+header .header-top nav li:has(:focus-visible){outline:2px solid var(--color-button-primary) !important;outline-offset:2px !important;border-radius:4px}
+header .header-top nav li ul li:has(:focus-visible){outline:2px solid var(--color-button-primary) !important;outline-offset:-4px !important;border-radius:4px}
+header .header-top .dropdown .dropdown-list{top:44px}
+header .header-top .collapsable-element .collapsable-dropdown .collapsable-list{left:0;top:48px}
+header .header-top .collapsable-element .collapsable-dropdown .collapsable-list .em{padding:0;margin:0}
+header .header-top .collapsable-element .collapsable-dropdown .collapsable-list li:hover a{background-color:#eee}
+header .header-top .collapsable-element .collapsable-dropdown .collapsable-list li:not(:last-of-type){border-bottom:1px solid #CCC}
+.collapsable-element .collapsable-hidden{display:none}
+.collapsable-element .collapsable-dropdown{position:relative}
+.collapsable-element .collapsable-dropdown:not(.collapsable-visible){display:none}
+.collapsable-element .collapsable-dropdown .collapsable-link{text-align:right;border-radius:4px}
+.collapsable-element .collapsable-dropdown .collapsable-link span{width:65px;white-space:nowrap}
+.collapsable-element .collapsable-dropdown .collapsable-link span i{font-size:18px;line-height:30px;vertical-align:top}
+.collapsable-element .collapsable-dropdown .collapsable-list{display:none;position:absolute;background-color:#fff;box-shadow:0 4px 7px -3px #404040;z-index:10}
+.collapsable-element .collapsable-dropdown .collapsable-list.right-list{right:-10px}
+.collapsable-element .collapsable-dropdown .collapsable-list.left-list{left:-10px}
+.collapsable-element .collapsable-dropdown .collapsable-list li{width:100%;margin:0;padding:0}
+.collapsable-element .collapsable-dropdown .collapsable-list li .selected{background-color:#eee}
+.collapsable-element .collapsable-dropdown .collapsable-list li .selected a{color:#007a91}
+.collapsable-element .collapsable-dropdown .collapsable-list li.separator{display:none}
+.collapsable-element .collapsable-dropdown .collapsable-list a{width:100%;line-height:30px;white-space:nowrap;padding:8px 20px}
+.collapsable-element .collapsable-dropdown .collapsable-list .dropdown-list{border-top:1px solid #eee;border-bottom:1px solid #eee}
+.collapsable-element .collapsable-dropdown .collapsable-list .dropdown-list:first-child{border-top:0}
+.collapsable-element .collapsable-dropdown .collapsable-list .dropdown-list:last-child{border-bottom:0}
+header nav li{position:relative;float:left}
+header .header-bottom nav a{display:block;font-size:18px;line-height:30px;font-weight:700;color:#fff;text-transform:uppercase}
+header .header-row{position:relative;display:table;table-layout:fixed;width:100%;background-color:#fff}
+header .header-top{padding:0;z-index:3}
+header .header-top .dropdown a.dropdown-selected{padding:0 16px}
+header .header-bottom{height:80px;z-index:2}
+header .header-bottom .header-group{display:flex;justify-content:center}
+header .header-bottom>div{text-align:center}
+header .header-bottom .logo{position:relative;width:248px;border-bottom:1px solid rgba(0,0,0,0.15);border-right:0}
+header .header-bottom .logo a{position:absolute;top:0;bottom:0;right:0;left:0;display:flex;align-items:center;justify-content:center;padding:0 20px;height:80px}
+header .header-bottom .logo a img{width:100%}
+header .header-bottom .logo a img[src$="svg"]{height:24px}
+header .header-bottom .nav{background-color:#FFF;color:#000;text-align:left;display:flex;flex-direction:column}
+header .header-bottom .nav nav{height:80px;padding-right:20px;overflow:hidden}
+header .header-bottom .nav nav a{line-height:80px;color:#000}
+header .header-bottom .nav nav li.separator{border-left:1px solid #fff;height:24px;margin:28px 0;display:none}
+header .header-bottom .login{position:relative;background-color:#FFF;color:#000;width:180px;transition:background-color .4s ease}
+header .header-bottom .login nav{width:100%}
+header .header-bottom .login a{display:flex;align-items:center;justify-content:center;width:100%;height:80px;color:#000}
+header .header-bottom .login .icon{display:inline-block;font-size:36px;line-height:30px;margin-right:10px;vertical-align:middle}
+header .header-bottom .login .icon span:before{transition:color .4s ease}
+header .header-bottom .login .description{display:inline-block;line-height:20px;text-align:left;vertical-align:middle;word-break:break-word;flex:1}
+header .header-bottom .login i{display:inline-block;margin-left:5px;vertical-align:middle;transform:rotate(0);transition:transform .3s ease;text-align:right}
+header .header-bottom .search-lens{width:80px;background-color:#FFF}
+header .header-bottom .search-lens span.search-lens-label{font-family:'UniCredit';font-weight:600}
+header .header-bottom .search-lens a.open-search .icon{font-size:35px}
+header .header-bottom .search-lens .search-field{position:absolute;bottom:0;right:-200px;display:flex;width:0;height:80px;background-color:#e2001a;overflow:hidden;transition:all .3s ease}
+header .header-bottom .search-lens .search-helper{display:none;position:absolute;top:80px;right:0;width:calc(100% - 248px);max-height:320px;overflow-y:scroll;z-index:100}
+.search-helper-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.6);z-index:40}
+header .header-mobile{display:none;height:100%;z-index:2}
+header .header-mobile .login a{display:inline-block;width:80px;height:80px;background-color:#b01200;text-align:center}
+header .header-mobile .login .icon{font-size:36px;line-height:80px}
+header .header-mobile .login .icon span:before{transition:color .4s ease}
+header .header-mobile .logo{display:inline-block;height:48px;display:flex;align-items:center;justify-content:center}
+header .header-mobile .logo img{width:auto;height:24px}
+header .login-area{position:relative;z-index:1}
+header .left-element{text-align:left}
+header .center-element{text-align:center}
+header .right-element{text-align:right}
+.collapsable-element .collapsable-dropdown{position:relative}
+.collapsable-element .collapsable-dropdown:not(.collapsable-visible){display:none}
+.dropdown{position:relative;text-align:left}
+.dropdown a.dropdown-selected{padding-left:16px;padding-right:16px;white-space:nowrap}
+.dropdown a.dropdown-selected .mobile{display:none}
+.dropdown a.dropdown-selected span{display:inline-block;line-height:30px;vertical-align:top}
+.dropdown a.dropdown-selected i{display:inline-block;font-size:20px;line-height:30px;vertical-align:top}
+.dropdown .dropdown-list{position:absolute;left:-1px;display:none;min-width:100%;background-color:#fff;border:1px solid #ccc;box-shadow:0 4px 7px -3px #404040;z-index:2}
+.dropdown.dropdown-right .dropdown-list{left:auto;right:-1px}
+.dropdown.dropdown-right .dropdown-list{left:auto;right:-1px}
+header .header-container .header-top .right-element .dropdown.dropdown-right{padding:0}
+header .hamburger-menu{display:none;float:right}
+header .hamburger-menu a{display:inline-block;width:64px;color:#9e9e9e;text-align:center}
+aside.hamburger{display:none;position:fixed;top:0;right:-100%;width:100%;height:100%;background-color:#333;color:#777;text-align:center;z-index:104;transition:right .5s ease}
+aside.hamburger .header{position:relative;padding:0 15px;border-bottom:1px solid rgba(255,255,255,0.2)}
+aside.hamburger .header .logo{margin:20px 0}
+aside.hamburger .header a.close-menu{position:absolute;top:17px;right:21px;display:block;color:#fff}
+aside.hamburger .scrollable{height:calc(100% - 60px);padding:0 15px;overflow-y:scroll}
+aside.hamburger section:last-child{border-bottom:0}
+aside.hamburger section h2{font-size:24px;line-height:45px;font-weight:400;color:#fff;padding-top:16px}
+aside.hamburger section .H3{font-size:17px;line-height:30px;font-weight:800;letter-spacing:1px;color:#ccc;padding:10px 0;text-transform:uppercase}
+aside.hamburger section a{display:block;font-size:14px;line-height:23px;font-weight:800;color:#ccc;letter-spacing:1px;text-transform:uppercase;padding:8px 0}
+aside.hamburger section .hamburger-dropdown{position:relative;margin:0 -15px;padding:8px 0;background-color:transparent;transition:background-color .5s ease}
+aside.hamburger section .hamburger-dropdown .H3{color:#ccc;padding:0;cursor:pointer}
+aside.hamburger section .hamburger-dropdown i{position:absolute;top:11px;right:19px;transform:rotate(0);transition:transform .3s ease}
+aside.hamburger section .hamburger-dropdown ul{display:none}
+aside.hamburger section.settings .hamburger-dropdown .H3,aside.hamburger section.settings .hamburger-dropdown ul li a,aside.hamburger section.status .hamburger-dropdown .H3{font-size:14px}
+aside.hamburger section.login{border-bottom:0}
+aside.hamburger section.search{color:#000;background-color:#bdbdbd;margin:0 -15px;padding:0 15px;border-bottom:0}
+aside.hamburger section.search:has(:focus-visible){outline:2px solid var(--color-button-primary) !important;outline-offset:-8px !important;border-radius:10px}
+aside.hamburger section.search img{display:inline-block;margin-right:10px;vertical-align:middle}
+aside.hamburger section.search input{width:calc(100% - 40px);font-size:24px;line-height:45px;color:#000;background-color:#bdbdbd;border:0;margin:5px 0;padding-right:31px;text-align:center;vertical-align:middle}
+aside.hamburger section.search input::-webkit-input-placeholder{font-size:24px;font-weight:100;letter-spacing:1px;text-align:center;color:rgba(0,0,0,0.6)}
+aside.hamburger section.about-us a{font-size:18px;line-height:30px}
+aside.hamburger section{border-bottom:1px solid rgba(255,255,255,0.2);min-height:0;width:auto}
+.sm_header_head_bar{height:100%}
+@media(max-width :959px){header .header-top,header .header-bottom{display:none}
+header .left-element,header .right-element{width:80px}
+header .header-mobile{display:table}
+header.login-opened .header-mobile .center-element,header.login-opened .header-mobile .right-element{border-bottom:1px solid rgba(0,0,0,0.15)}
+header .login-area .login-area-content{padding:8px 20px 20px 33px}
+header .login-area .login-area-content .close-olbmenu{display:none}
+header .login-area .login-area-content ul li a .icon{font-size:24px}
+header .second-level .header-apply-now button{padding:0;min-width:96px}
+header .hamburger-menu,aside.hamburger{display:block}
+}
+@media(max-width:599px){header .left-element,header .right-element{width:48px}
+header .header-mobile .login a{width:48px;height:48px}
+header .hamburger-menu a{width:48px}
+header .header-mobile .login a .icon{line-height:48px}
+header .header-mobile .logo img{height:16px}
+header .header-mobile .logo img[src $= "logo_sr.svg"],header .header-mobile .logo img[src $= "banja_luka.svg"],header .header-mobile .logo img[src $= "logo_ru.svg"]{height:19px}
+header .header-mobile .logo img[src *= "leasing"],header .header-mobile .logo img[src *= "private"]{height:32px}
+header .login-area .login-area-content{padding:8px 18px 20px 18px}
+.dropdown a.dropdown-selected .desktop{display:none}
+.dropdown a.dropdown-selected .mobile{display:block}
+}
+header .header-row.header-top{display:flex}
+header .header-row.header-top .left-element{width:50%}
+header .header-row{align-items:center;justify-content:space-between;position:relative;display:table;table-layout:fixed;width:100%;background-color:#fff}
+header .header-row>div{display:table-cell;vertical-align:middle}
+header .header-top{height:30px;background-color:#eee;padding:0;z-index:3}
+header .header-top .center-element{width:160px;padding-top:0}
+header .header-top nav a:hover{color:#262626}
+li{font-size:.9em;padding:0}
+ul{margin:0;padding:0}
